@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Landing pages Devhat 🤠
 
-## Getting Started
+Este repositório abriga várias Landing Pages de código aberto, prontas para receber contribuições de desenvolvedores entusiastas.
+Seja parte da criação de experiências visuais incríveis e únicas!
+Cada projeto dentro deste mono repo possui suas próprias características e tecnologias empregadas, oferecendo uma ampla gama de oportunidades para contribuir.
 
-First, run the development server:
+## Projetos Disponíveis:
+### [Octopost Landing Page 🐙✨](https://github.com/devhatt/landing-pages/tree/master/projects/octopost)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Uma experiência visualmente deslumbrante utilizando Next.js 14, Tailwind CSS, e Frame Motion para animações envolventes.
+Sobre o Projeto:
+O Octopost é mais do que uma landing page; é uma colaboração global para criar uma interface web única e cativante.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tecnologias Utilizadas:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next.js 14
+Tailwind CSS
+Frame Motion
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### [PetDex Landing Page 🐾✨](https://github.com/devhatt/landing-pages/tree/master/projects/petdex)
 
-## Learn More
+Uma experiência visualmente deslumbrante utilizando HTML, JavaScript Vanilla, Sass, e Jest para testes.
+Sobre o Projeto:
+O PetDex é uma landing page para amantes de animais, celebrando a conexão entre humanos e seus animais de estimação.
 
-To learn more about Next.js, take a look at the following resources:
+### Tecnologias Utilizadas:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+HTML
+JavaScript Vanilla
+Sass
+Jest
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Como Contribuir para este Mono Repo:
+Queremos que todos participem! As tarefas foram cuidadosamente quebradas em pedaços gerenciáveis para que qualquer pessoa, independentemente do nível de habilidade, possa contribuir. Junte-se a nós na missão de criar landing pages únicas, cheias de estilos e encantamento.
 
-## Deploy on Vercel
+## Como começar:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Clone este repositório.
+Escolha uma tarefa ou sugira uma nova.
+Abra um pull request e faça parte da revolução OpenSource Landing Pages! 🌐💻
+Vamos criar algo incrível juntos! 🚀✨
