@@ -34,7 +34,7 @@ function Navbar() {
   const [hoverLink, setHoverLink] = useState(pathname);
 
   return (
-    <div className="backdrop-blue-md sticky top-2 z-[100] mx-auto  mb-12 flex h-[77px] w-full items-center  justify-evenly bg-white">
+    <div className="backdrop-blue-md sticky top-0 z-[100] mx-auto flex h-[77px] w-full items-center  justify-evenly bg-white">
       <div>
         <Logo />{" "}
       </div>
