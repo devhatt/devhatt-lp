@@ -34,7 +34,7 @@ function Navbar() {
   const [hoverLink, setHoverLink] = useState(pathname);
 
   return (
-    <div className="backdrop-blue-md sticky top-0 z-[100] mx-auto flex h-[77px] w-full items-center  justify-evenly bg-white">
+    <div className="backdrop-blue-md fixed top-0 z-[100]  mx-auto flex h-[77px] w-full items-center  justify-evenly bg-white">
       <div>
         <Logo />{" "}
       </div>
@@ -76,7 +76,7 @@ lg:text-base ${isActive ? "font-semibold" : "font-normal"}`}
         })}
       </nav>
       <div className="-ml-40 mr-10">
-        <button className="relative  m-2 overflow-hidden rounded-full bg-[#9A78F2] px-10 py-4 text-white before:absolute before:-right-20 before:-top-36 before:h-60 before:w-60 before:rounded-full before:bg-[#996BEA] after:absolute after:-right-44 after:-top-40 after:h-60 after:w-60 after:rounded-full after:bg-[#935AE5] hover:after:bg-gradient-to-r hover:after:from-pink-500 hover:after:to-violet-500 hover:after:right-10 hover:brightness-105 after:transition-all duration-1000">
+        <button className="relative drop-shadow-lg hover:drop-shadow-2xl hover:scale-[97%] m-2 overflow-hidden rounded-full bg-[#9A78F2] px-10 py-4 text-white before:absolute before:-right-20 before:-top-36 before:h-60 before:w-60 before:rounded-full before:bg-[#996BEA] after:absolute after:-right-44 after:-top-40 after:h-60 after:w-60 after:rounded-full after:bg-[#935AE5] hover:after:bg-gradient-to-r hover:after:from-pink-500 hover:after:to-violet-500 hover:after:right-10 hover:brightness-105 after:transition-all duration-1000">
           <span className="relative z-10">Teste agora</span>
         </button>
       </div>

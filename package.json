@@ -10,17 +10,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^11.2.12",
+    "@types/next": "^9.0.0",
+    "framer-motion": "^11.3.19",
     "gsap": "^3.12.5",
     "next": "14.2.4",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-wavify": "^1.11.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.14.13",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
