@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "bg-pattern": "linear-gradient(to right, #ff7e5f, #feb47b)",
+        "bg-pattern": "url('/next.svg')",
       },
     },
   },

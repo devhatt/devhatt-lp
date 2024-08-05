@@ -1,5 +1,5 @@
 function Page() {
-  return <h1>Octopost</h1>;
+  return <h1 className="">Octopost</h1>;
 }
 
 export default Page;

@@ -4,7 +4,7 @@ import { Poppins } from "next/font/google";
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import WhatIsOcto from "./components/WhatIsOcto";
+import About from "./components/About";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={`${poppins.className} max-h-screen bg-primary-gray`}>
         <Navbar />
         <Hero />
-        <WhatIsOcto />
+        <About />
         {children}
       </body>
     </html>
