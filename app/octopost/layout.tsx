@@ -2,7 +2,7 @@ import "../../styles/globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "@/components/octopost/Navbar/Navbar";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,7 +23,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} max-h-screen bg-primary-gray`}>
-        <Navbar />
         {children}
       </body>
     </html>

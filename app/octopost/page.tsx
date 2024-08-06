@@ -1,5 +1,13 @@
+import Navbar from "@/components/octopost/Navbar/Navbar";
+import Works from "@/components/octopost/Works/Works";
+
 function Page() {
-  return <h1>Octopost</h1>;
+  return (
+    <>
+      <Navbar />
+      <Works />
+    </>
+  );
 }
 
 export default Page;
