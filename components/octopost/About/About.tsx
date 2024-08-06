@@ -1,12 +1,12 @@
-import AboutLogo from "./assets/about/AboutLogo";
-import AboutIcons, {
+import AboutLogo from "./assets/AboutLogo";
+import {
   AboutIcons1,
   AboutIcons2,
   AboutIcons3,
   AboutIcons4,
   AboutIcons5,
-} from "./assets/about/AboutLogoIcons";
-import CloudIcon from "./assets/about/CloudIcon";
+} from "./assets/AboutLogoIcons";
+import CloudIcon from "./assets/CloudIcon";
 
 export default function About() {
   return (

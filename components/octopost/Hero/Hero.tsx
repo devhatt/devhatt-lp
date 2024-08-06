@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import HeroImg from "./assets/HeroLogo/HeroImg";
-import WaveAnimation from "./components/WaveAnimation";
-import StickerLogo1 from "./assets/HeroLogo/StickerLogo1";
-import StickerLogo2 from "./assets/HeroLogo/StickerLogo1";
 import { SvgIcon1, SvgIcon2, SvgIcon3, SvgIcon4 } from "./assets/socials";
+import HeroImg from "./assets/HeroImg";
+import StickerLogo1 from "./assets/StickerLogo1";
+import StickerLogo2 from "./assets/StickerLogo2";
+import WaveAnimation from "./assets/WaveAnimation";
 
 function Hero() {
   return (

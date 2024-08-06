@@ -25,9 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} max-h-screen bg-primary-gray`}>
-        <Navbar />
-        <Hero />
-        <About />
         {children}
       </body>
     </html>
