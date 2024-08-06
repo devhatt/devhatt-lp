@@ -8,15 +8,15 @@ Estamos entusiasmados com sua contribuição para nossos projetos de landing pag
    - Primeiro, faça um fork deste repositório para sua conta do GitHub.
    - Em seguida, clone o repositório para sua máquina local:
      ```bash
-     git clone https://github.com/seu-usuario/landing-pages-devhat.git
+     git clone https://github.com/seu-usuario/devhatt-lp.git
      ```
    - Navegue até o diretório do projeto:
      ```bash
-     cd landing-pages-devhat
+     cd devhatt-lp
      ```
 
 2. **Escolha uma Tarefa ou Sugira uma Nova:**
-   - Verifique as [issues](https://github.com/devhatt/landing-pages/issues) e os [projetos](https://github.com/devhatt/landing-pages/projects) para encontrar uma tarefa em que gostaria de trabalhar.
+   - Verifique as [issues](https://github.com/devhatt/devhatt-lp/issues) e os [projetos](https://github.com/devhatt/devhatt-lp/projects) para encontrar uma tarefa em que gostaria de trabalhar.
    - Se tiver uma ideia nova, sinta-se à vontade para abrir uma nova issue.
 
 3. **Crie um Branch para sua Tarefa:**
@@ -60,6 +60,6 @@ Estamos entusiasmados com sua contribuição para nossos projetos de landing pag
 ## Comunicação e Suporte
 
 - **Comunicação:** Participe do nosso [Discord/Slack](#) para discutir ideias, fazer perguntas e se conectar com outros contribuidores.
-- **Status Updates:** Fique atento às [atualizações de status](https://github.com/devhatt/landing-pages/projects) do projeto para saber mais sobre o progresso atual e futuros planos.
+- **Status Updates:** Fique atento às [atualizações de status](https://github.com/devhatt/devhatt-lp/projects) do projeto para saber mais sobre o progresso atual e futuros planos.
 
 Agradecemos sua contribuição e estamos ansiosos para ver o que você criará! Vamos fazer algo incrível juntos! 🚀✨
