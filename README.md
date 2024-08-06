@@ -4,7 +4,6 @@ Este repositório abriga várias landing pages de código aberto, prontas para r
 
 ## Projetos Disponíveis:
 
-
 ### [Octopost Landing Page 🐙✨](https://github.com/devhatt/landing-pages/tree/master/projects/octopost)
 
 Uma experiência visualmente deslumbrante utilizando Next.js 14, Tailwind CSS e Framer Motion para animações envolventes.  
@@ -27,9 +26,11 @@ Estamos constantemente adicionando novos projetos ao nosso repositório. Fique a
 - Tailwind CSS
 - Framer Motion
 
-## Como Contribuir para este Monorepo:
+## Como Contribuir para este Repositório:
 
 Queremos que todos participem! As tarefas foram cuidadosamente divididas em partes gerenciáveis para que qualquer pessoa, independentemente do nível de habilidade, possa contribuir. Junte-se a nós na missão de criar landing pages únicas, cheias de estilo e encantamento.
+
+Para mais detalhes sobre como contribuir, consulte o nosso [guia de contribuição](CONTRIBUTING.md).
 
 ## Como Começar:
 
