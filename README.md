@@ -30,7 +30,7 @@ Estamos constantemente adicionando novos projetos ao nosso repositório. Fique a
 
 Queremos que todos participem! As tarefas foram cuidadosamente divididas em partes gerenciáveis para que qualquer pessoa, independentemente do nível de habilidade, possa contribuir. Junte-se a nós na missão de criar landing pages únicas, cheias de estilo e encantamento.
 
-Para mais detalhes sobre como contribuir, consulte o nosso [guia de contribuição](CONTRIBUTING.md).
+Para mais detalhes sobre como contribuir, consulte o nosso [guia de contribuição](contributing.md).
 
 ## Como Começar:
 
