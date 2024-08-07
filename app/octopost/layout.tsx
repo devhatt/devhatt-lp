@@ -2,7 +2,9 @@ import "../../styles/globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import React from "react";
-import Navbar from "@/components/octopost/Navbar/Navbar";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
 
 const poppins = Poppins({
   subsets: ["latin"],

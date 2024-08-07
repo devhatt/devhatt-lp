@@ -116,9 +116,9 @@ function Page() {
           y2="26.4981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A076F9" />
-          <stop offset="0.51" stop-color="#A076F9" />
-          <stop offset="1" stop-color="#AC3FE4" />
+          <stop stopColor="#A076F9" />
+          <stop offset="0.51" stopColor="#A076F9" />
+          <stop offset="1" stopColor="#AC3FE4" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_944_257"
@@ -128,9 +128,9 @@ function Page() {
           y2="26.4997"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A076F9" />
-          <stop offset="0.51" stop-color="#A076F9" />
-          <stop offset="1" stop-color="#AC3FE4" />
+          <stop stopColor="#A076F9" />
+          <stop offset="0.51" stopColor="#A076F9" />
+          <stop offset="1" stopColor="#AC3FE4" />
         </linearGradient>
       </defs>
     </svg>

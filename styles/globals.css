@@ -67,8 +67,16 @@ body {
   );
 }
 
+.bg-pattern {
+  background-image: url("/pattern.svg"),
+    linear-gradient(to top, #e030a3, #805ad5, #4b6afc);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+}
+
 .primary-text-gradient {
-  background: linear-gradient(129deg, #7033e0 0%, #f2ffff 100%);
+  background: linear-gradient(129deg, #7033e0 0%, #e090a9 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
