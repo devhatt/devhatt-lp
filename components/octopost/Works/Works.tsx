@@ -32,8 +32,6 @@ function Works() {
           </p>
         </div>
 
-        <div className="relative">
-          <div className="overflow-hidden">
             <ul className="flex overflow-x-auto gap-4 no-scrollbar desktop:gap-7" ref={scrollContainerRef} onScroll={handleScrollEvent}>
             <li className="flex-none">
                 <div className='w-7'>
@@ -54,8 +52,6 @@ function Works() {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
 
       </div>
       <div className="w-fit absolute bottom-12 inset-x-0 mx-auto z-50 gap-3 hidden mobile:flex">
