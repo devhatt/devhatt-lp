@@ -75,6 +75,19 @@ body {
   background-position: center, center;
 }
 
+.bg-layer {
+  background-image: url("/bglayer.svg");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+}
+.bg-layer1 {
+  background-image: url("/bglayer1.svg");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+}
+
 .primary-text-gradient {
   background: linear-gradient(129deg, #7033e0 0%, #e090a9 100%);
   background-clip: text;

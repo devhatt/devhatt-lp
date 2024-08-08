@@ -27,14 +27,11 @@ export default function Datas() {
   return (
     <section
       className="h-[247px]  flex-center relative bg-gradient-to-r flex-wrap
-      from-octopost-primaryViolet to-octopost-primaryPink"
+      from-octopost-primaryViolet overflow-hidden to-octopost-primaryPink"
     >
       <div
-        className="
-
-      after:bg-white/10 after:size-[800px] after:rounded-full  after:absolute after:-right-52 after:-top-10
-before:bg-white/5 before:size-[2000px] before:rounded-full  before:absolute before:left-80 before:-top-[500px]
-        "
+        className=" after:bg-white/10 after:size-[800px] after:rounded-full  after:absolute after:-right-52 after:-top-10
+before:bg-white/5 before:size-[2000px] before:rounded-full  before:absolute before:left-80 before:-top-[500px] after:overflow-hidden"
       ></div>
       {dataNumbers.map(({ icon: Icon, ...data }, index) => (
         <div key={index} className="flex gap-5 max-w-[300px] z-100 relative">

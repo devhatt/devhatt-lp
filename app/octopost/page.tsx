@@ -1,7 +1,7 @@
 import About from "@/components/octopost/About/About";
-import Datas from "@/components/octopost/Datas/Datas";
 import Hero from "@/components/octopost/Hero/Hero";
 import Navbar from "@/components/octopost/Navbar/Navbar";
+import JoinUs from "@/components/octopost/JoinUs/JoinUs";
 
 function Page() {
   return (
@@ -10,7 +10,7 @@ function Page() {
       <Hero />
       <About />
 
-      <Datas />
+      <JoinUs />
     </>
   );
 }
