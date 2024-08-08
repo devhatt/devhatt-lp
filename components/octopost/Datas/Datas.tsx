@@ -27,7 +27,11 @@ export default function Datas() {
   return (
     <section
       className="h-[247px]  flex-center relative bg-gradient-to-r flex-wrap
+<<<<<<< HEAD
       from-octopost-primaryViolet overflow-hidden to-octopost-primaryPink"
+=======
+      from-octopost-primaryViolet to-octopost-primaryPink overflow-hidden"
+>>>>>>> main
     >
       <div
         className=" after:bg-white/10 after:size-[800px] after:rounded-full  after:absolute after:-right-52 after:-top-10
