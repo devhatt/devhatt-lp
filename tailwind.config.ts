@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-works": "radial-gradient(50% 50% at 50% 50%, #E36CE6 0%, rgba(255, 255, 255, 0) 100%)",
+        "gradient-purplebar": "linear-gradient(90deg, rgba(137, 77, 246, 0.7) 0%, rgba(247, 40, 142, 0.7) 102.79%)"
+      },
       colors: {
         octopost: {
           primaryWhite: "#fff",
@@ -40,6 +47,23 @@ const config: Config = {
           error: "#B3271E",
         },
       },
+      boxShadow: {
+        "dropshadow-card": "2px 3px 13.9px 0px rgba(0, 0, 0,, 0.05)",
+      },
+      screens: {
+        'mobile': {'min': '320px', 'max': '480px'},
+        'tablet': {'min': '768px', 'max': '1279px'},
+        'desktop': {'min': '1280px'},
+      },
+      utilities: {
+        'no-scrollbar': {
+          "-webkit-overflow-scrolling": "touch",
+          "scrollbar-width": "none",
+          "&::-webkit-scrollbar": {
+            display: "none"
+          }
+        }
+      }
     },
   },
   plugins: [],
