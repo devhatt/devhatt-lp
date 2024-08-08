@@ -7,7 +7,11 @@ import Works from "@/components/octopost/Works/Works";
 function Page() {
   return (
     <>
+      <Navbar />
+      <Hero />
+      <About />
       <Works />
+      <Datas />
     </>
   );
 }
