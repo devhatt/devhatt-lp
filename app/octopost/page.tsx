@@ -11,6 +11,7 @@ function Page() {
       <Hero />
       <About />
       <Works />
+
       <JoinUs />
     </>
   );
