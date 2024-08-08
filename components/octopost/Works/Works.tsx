@@ -11,7 +11,6 @@ import { CARDS } from './utils/Cards';
 function Works() {
   const [activeSlide, setActiveSlide] = useState<number>(0);
   const scrollContainerRef = useRef<HTMLUListElement>(null);
-  const totalSlides = CARDS.length;
 
   const handleScrollEvent = (): void => {
     if (scrollContainerRef.current) {
@@ -35,7 +34,7 @@ function Works() {
 
         <div className="relative">
           <div className="overflow-hidden">
-            <ul className="flex overflow-x-auto gap-4 no-scrollbar" ref={scrollContainerRef} onScroll={handleScrollEvent}>
+            <ul className="flex overflow-x-auto gap-7 no-scrollbar mobile:gap-4" ref={scrollContainerRef} onScroll={handleScrollEvent}>
             <li className="flex-none">
                 <div className='w-7'>
                 </div>
@@ -60,7 +59,7 @@ function Works() {
 
       </div>
       <div className="w-fit absolute bottom-12 inset-x-0 mx-auto z-50 gap-3 hidden mobile:flex">
-        {Array.from({ length: totalSlides }).map((_, index) => (
+        {Array.from({ length: CARDS.length }).map((_, index) => (
           <div 
             key={index}
             className={`w-3 h-3 border-[1px] rounded-full transition-all duration-500 ${index === activeSlide ? 'bg-octopost-primaryViolet border-octopost-primaryViolet' : 'border-[#A1A1A1]'}`}
@@ -80,7 +79,7 @@ function Works() {
       <div className="absolute left-[10%] bottom-[8%] mobile:-left-20 mobile:bottom-1 desktop:animate-pulse mobile:opacity-40">
         <Bubble />
       </div>
-      <div className="absolute left-[25.3%] top-[30.2%] scale-[.71] rotate-90 mobile:left-72 mobile:top-52 desktop:animate-pulse mobile:opacity-40">
+      <div className="absolute left-[24.3%] top-[30.2%] scale-[.71] rotate-90 mobile:left-72 mobile:top-52 desktop:animate-pulse mobile:opacity-40">
         <Bubble />
       </div>
       <div className="absolute right-[15%] top-[25%] scale-75  mobile:-left-36 mobile:top-28 desktop:animate-pulse mobile:opacity-40">
