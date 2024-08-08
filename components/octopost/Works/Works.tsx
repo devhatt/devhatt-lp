@@ -34,7 +34,7 @@ function Works() {
 
         <div className="relative">
           <div className="overflow-hidden">
-            <ul className="flex overflow-x-auto gap-7 no-scrollbar mobile:gap-4" ref={scrollContainerRef} onScroll={handleScrollEvent}>
+            <ul className="flex overflow-x-auto gap-4 no-scrollbar desktop:gap-7" ref={scrollContainerRef} onScroll={handleScrollEvent}>
             <li className="flex-none">
                 <div className='w-7'>
                 </div>
