@@ -76,16 +76,84 @@ body {
 }
 
 .bg-layer {
-  background-image: url("/bglayer.svg");
+  background-image: url("/layers/bglayer.svg");
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
 }
 .bg-layer1 {
-  background-image: url("/bglayer1.svg");
-  background-size: cover, cover;
+  background-image: url("/layers/bglayer1.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+.bg-layer2 {
+  background-image: url("/layers/Vector-1.svg");
+  background-size: fit, fit;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
+}
+.bg-layer3 {
+  background-image: url("/layers/Vector-2.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+
+.bg-layer4 {
+  background-image: url("/layers/Vector-3.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+
+.bg-layer5 {
+  background-image: url("/layers/Vector-4.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+
+.bg-layer6 {
+  background-image: url("/layers/Vector-5.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+
+.bg-layer7 {
+  background-image: url("/layers/Vector-6.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+
+.bg-layer8 {
+  background-image: url("/layers/Vector-7.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+
+.bg-layer9 {
+  background-image: url("/layers/Vector-8.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+
+.bg-layer10 {
+  background-image: url("/layers/Vector-9.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
+}
+
+.bg-layer11 {
+  background-image: url("/layers/Vector.svg");
+  background-size: fit, fit;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
 }
 
 .primary-text-gradient {
