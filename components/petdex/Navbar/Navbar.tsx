@@ -1,29 +1,42 @@
+'use client'
 
 import { Logo } from './assets/Logo'
+import { MenuButton } from './assets/Menu-button'
 import { SearchIcon } from './assets/SearchIcon'
 
 function Navbar() {
+  //state pra lidar com menu responsivo
+  //fn para abrir men u responsivo
+  const handleButton = () => console.log('abrir menu')
+
   return (
-    <div className="border-2 border-red-500">
-      <header className="flex  justify-between mx-auto">
-        <div className="flex place-content-end border-2 border-red-500">
-          <Logo />
-          <nav>
-            <ul className="flex">
+    <div className="">
+      <header className="flex  justify-between w-[80%] h-20 mx-auto mobile:w-[90%]">
+        <div className="flex">
+          <nav className='flex items-center mobile:w-[90%] mx-auto '>
+            <div className='w-28 items-center'>
+              <Logo />
+            </div>
+            <ul className="flex space-x-3  mobile:hidden tablet:hidden">
               <li><a href="#">home</a></li>
               <li><a href="#">petdex</a></li>
               <li><a href="#">contato</a></li>
             </ul>
           </nav>
         </div>
-        <div className='border-2 border-red-500'>
-          <SearchIcon />
-          <input type="search" name="search" placeholder="Pesquise seu amigo aqui!" />
+        <div className='flex items-center space-x-10 '>
+          <div className='flex border-2 border-gray-200 rounded-3xl px-4 py-3 '>
+            <SearchIcon />
+            <input className='mobile:hidden tablet:hidden' type="search" name="search" placeholder="Pesquise seu amigo aqui!" />
+          </div>
           <button
-            className='bg-petdex-secondaryGreen text-white'
+            className='bg-petdex-secondaryGreen text-white mobile:hidden tablet:hidden '
           >
             Entrar | Cadastrar
           </button>
+          <div className='cursor-pointer desktop:hidden'>
+            <MenuButton handleButton={handleButton} />
+          </div>
         </div>
       </header>
     </div>
