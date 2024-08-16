@@ -103,7 +103,7 @@ const RenderLayers = () => {
           repeat: Infinity,
           repeatType: "reverse",
         }}
-        className="absolute  bg-layer8 bottom-[400px] w-72 h-40 left-[700px] opacity-50"
+        className="absolute  bg-layer8 bottom-[400px] w-72 h-40 left-[700px] opacity-100"
       ></motion.div>
 
       <motion.div
@@ -164,7 +164,7 @@ export default function JoinUs() {
       <div className="flex-shrink-0">
         <Datas />
       </div>
-      <div className=" flex-grow bg-[#2C3680] p-2 sm:p-0 relative ">
+      <div className="overflow-hidden flex-grow bg-[#2C3680] p-2 sm:p-0 relative ">
         <RenderLayers />
         <div className="absolute flex-center  inset-0 gap-32">
           <div className="hidden sm:block ">
