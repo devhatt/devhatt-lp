@@ -13,6 +13,7 @@ function Page() {
       <About />
       <Works />
       <Datas />
+
       <Faq />
     </>
   );
