@@ -1,4 +1,6 @@
 import About from "@/components/octopost/About/About";
+import Datas from "@/components/octopost/Datas/Datas";
+import Faq from "@/components/octopost/Faq/Faq";
 import Hero from "@/components/octopost/Hero/Hero";
 import Navbar from "@/components/octopost/Navbar/Navbar";
 import JoinUs from "@/components/octopost/JoinUs/JoinUs";
@@ -12,6 +14,9 @@ function Page() {
       <Hero />
       <About />
       <Works />
+      <Datas />
+
+      <Faq />
       <JoinUs />
       <Footer />
     </>
