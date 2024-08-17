@@ -30,7 +30,7 @@ function Navbar() {
         <div className='flex items-center  space-x-3'>
           <div
             onClick={handleSearchButton}
-            className='flex border-2 space-x-3 border-gray-200 rounded-3xl px-4 py-3 cursor-pointer'
+            className={`${!isOpen ? "hidden" : "block"} flex border-2 space-x-3 border-gray-200 rounded-3xl px-4 py-3 cursor-pointer `}
           >
             <SearchIcon />
             {!isOpen &&
@@ -51,8 +51,8 @@ function Navbar() {
             <MenuButton handleButton={handleButton} isOpen={isOpen} />
           </div>
         </div>
-      </header>
-    </div>
+      </header >
+    </div >
   )
 }
 
