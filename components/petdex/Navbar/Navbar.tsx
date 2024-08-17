@@ -23,7 +23,7 @@ function Navbar() {
               <Logo />
             </div>
             <div className='absolute flex flex-col left-0 top-[8rem] lg:relative lg:left-0 lg:top-0 '>
-              {isOpen && <Menu />}
+              {!isOpen && <Menu />}
             </div>
           </nav>
         </div>

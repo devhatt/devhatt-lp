@@ -4,7 +4,7 @@ function MenuButton({ handleButton, isOpen }) {
 
   return (
     <>
-      {!isOpen ?
+      {isOpen ?
         <svg onClick={handleButton}
           width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg"
         >
