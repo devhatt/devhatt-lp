@@ -8,11 +8,12 @@ import { Menu } from './assets/Menu'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isSearch, setIsSearch] = useState(true)
   //state pra lidar com menu responsivo
   //fn para abrir men u responsivo
   const handleButton = () => setIsOpen(o => !o)
 
-  const handleSearchButton = () => console.log('pesquisando ...')
+  const handleSearchButton = () => setIsSearch(s => !s)
 
   return (
     <div className="py-8">
@@ -20,36 +21,40 @@ function Navbar() {
         <div className="flex">
           <nav className='flex items-center mobile:w-[90%] mx-auto '>
             <div className='w-28 items-center mr-10'>
-              <Logo />
+              <Logo isSearch={isSearch} />
             </div>
-            <div className='absolute flex flex-col left-0 top-[8rem] lg:relative lg:left-0 lg:top-0 '>
-              {!isOpen && <Menu />}
+            <div
+              className={`${!isOpen ? '' : 'left-[-400px]'} absolute flex flex-col left-0 top-[8rem] lg:relative lg:left-0 lg:top-0 `}
+            >
+              <Menu />
             </div>
           </nav>
         </div>
         <div className='flex items-center  space-x-3'>
           <div
             onClick={handleSearchButton}
-            className={`${!isOpen ? "hidden" : "block"} flex border-2 space-x-3 border-gray-200 rounded-3xl px-4 py-3 cursor-pointer `}
+            className={`flex border-2 space-x-3 border-gray-200 rounded-3xl px-4 py-3 cursor-pointer`}
           >
             <SearchIcon />
-            {!isOpen &&
-              <input
-                type="search"
-                name="search"
-                placeholder="Pesquise seu amigo aqui!"
-              />
-            }
-          </div>
 
+            <input
+              className={` hidden lg:block`}
+              type="search"
+              name="search"
+              placeholder="Pesquise seu amigo aqui!"
+            />
+
+          </div>
           <button
-            className='hidden bg-petdex-secondaryGreen text-white lg:block px-10 py-3 rounded-3xl'
+            className={`${!isOpen ? 'block' : 'hidden'} absolute left-0 top-[30rem] bg-petdex-secondaryGreen text-white px-10 py-3 rounded-3xl lg:relative lg:block lg:top-0 `}
           >
             Entrar | Cadastrar
           </button>
-          <div className='cursor-pointer lg:hidden'>
-            <MenuButton handleButton={handleButton} isOpen={isOpen} />
-          </div>
+          {isSearch &&
+            <div className='cursor-pointer lg:hidden'>
+              <MenuButton handleButton={handleButton} isOpen={isOpen} />
+            </div>
+          }
         </div>
       </header >
     </div >
