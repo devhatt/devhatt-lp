@@ -9,8 +9,7 @@ import { Menu } from './assets/Menu'
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isSearch, setIsSearch] = useState(true)
-  //state pra lidar com menu responsivo
-  //fn para abrir men u responsivo
+
   const handleButton = () => setIsOpen(o => !o)
 
   const handleSearchButton = () => setIsSearch(s => !s)
