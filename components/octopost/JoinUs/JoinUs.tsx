@@ -1,10 +1,9 @@
-"use client";
-import { motion } from "framer-motion";
-import JoinUsLogo from "./assets/JoinUsLogo";
+'use client'
+import { motion } from 'framer-motion'
+import JoinUsLogo from './assets/JoinUsLogo'
 
-import Datas from "@/components/octopost/Datas/Datas";
-import { useState } from "react";
-import Image from "next/image";
+import Datas from '@/components/octopost/Datas/Datas'
+import Image from 'next/image'
 
 const RenderLayers = () => {
   return (
@@ -12,98 +11,98 @@ const RenderLayers = () => {
       <motion.div
         animate={{ y: [50, 0] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 10,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer inset-0 "
+        className="bg-layer absolute inset-0"
       ></motion.div>
       <motion.div
         animate={{ y: [90, 0] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 10,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer1 inset-0 "
+        className="bg-layer1 absolute inset-0"
       ></motion.div>
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 4,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer2 bottom-[550px] size-32 left-[420px] "
+        className="bg-layer2 absolute bottom-[550px] left-[420px] size-32"
       ></motion.div>
 
       <motion.div
         animate={{ x: [0, 20], y: [0, 20] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 4,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer3 bottom-[450px] w-72 h-20 left-[20px] "
+        className="bg-layer3 absolute bottom-[450px] left-[20px] h-20 w-72"
       ></motion.div>
 
       <motion.div
         animate={{ x: [-30, 0], y: [20, -20] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 8,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute opacity-70  bg-layer4 bottom-[600px] w-72 h-20 left-[680px] "
+        className="bg-layer4 absolute bottom-[600px] left-[680px] h-20 w-72 opacity-70"
       ></motion.div>
 
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 4,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer5 bottom-[500px] w-72 h-40 left-[880px] opacity-50"
+        className="bg-layer5 absolute bottom-[500px] left-[880px] h-40 w-72 opacity-50"
       ></motion.div>
 
       <motion.div
         animate={{ x: [-30, 0], y: [20, 0] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 8,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer6 bottom-[650px] w-72 h-40 left-[120px] opacity-50"
+        className="bg-layer6 absolute bottom-[650px] left-[120px] h-40 w-72 opacity-50"
       ></motion.div>
 
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 4,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer7 bottom-[400px] w-72 h-40 left-[1220px] opacity-80"
+        className="bg-layer7 absolute bottom-[400px] left-[1220px] h-40 w-72 opacity-80"
       ></motion.div>
 
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 4,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer8 bottom-[400px] w-72 h-40 left-[700px] opacity-100"
+        className="bg-layer8 absolute bottom-[400px] left-[700px] h-40 w-72 opacity-100"
       ></motion.div>
 
       <motion.div
@@ -115,64 +114,63 @@ const RenderLayers = () => {
           opacity: [0.8, 1],
         }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 5,
           delay: 0,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer9 bottom-[600px] w-72 h-40 left-[100px] sm:left-[1000px]"
+        className="bg-layer9 absolute bottom-[600px] left-[100px] h-40 w-72 sm:left-[1000px]"
       ></motion.div>
 
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 4,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute  bg-layer10 bottom-[500px] w-72 h-40 left-[1400px] opacity-40"
+        className="bg-layer10 absolute bottom-[500px] left-[1400px] h-40 w-72 opacity-40"
       ></motion.div>
 
       <motion.div
         animate={{ x: [-20, 10], y: [10, 0], opacity: [0.6, 0.7] }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           duration: 4,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
           delay: 2,
         }}
-        className="absolute  bg-layer11 bottom-[400px] w-72 h-40 left-[1490px] opacity-40"
+        className="bg-layer11 absolute bottom-[400px] left-[1490px] h-40 w-72 opacity-40"
       ></motion.div>
     </>
-  );
-};
+  )
+}
 
 export default function JoinUs() {
-  const [avatars, setAvatars] = useState([1, 2, 3]);
   const profiles = [
-    { imgSrc: "/image1.jpg", alt: "Profile 1" },
-    { imgSrc: "/image2.jpg", alt: "Profile 2" },
-    { imgSrc: "/image3.jpg", alt: "Profile 3" },
-    { imgSrc: "/image4.jpg", alt: "Profile 4" },
-  ];
+    { imgSrc: '/image1.jpg', alt: 'Profile 1' },
+    { imgSrc: '/image2.jpg', alt: 'Profile 2' },
+    { imgSrc: '/image3.jpg', alt: 'Profile 3' },
+    { imgSrc: '/image4.jpg', alt: 'Profile 4' },
+  ]
 
   return (
-    <section className="h-screen flex flex-col">
+    <section className="flex h-screen flex-col">
       <div className="flex-shrink-0">
         <Datas />
       </div>
-      <div className="overflow-hidden flex-grow bg-[#2C3680] p-2 sm:p-0 relative ">
+      <div className="relative flex-grow overflow-hidden bg-[#2C3680] p-2 sm:p-0">
         <RenderLayers />
-        <div className="absolute flex-center  inset-0 gap-32">
-          <div className="hidden sm:block ">
+        <div className="flex-center absolute inset-0 gap-32">
+          <div className="hidden sm:block">
             <JoinUsLogo />
           </div>
-          <div className="text-white space-y-10">
-            <div className="max-w-[500px] ">
-              <h1 className="text-[56px] leading-tight font-bold ">
+          <div className="space-y-10 text-white">
+            <div className="max-w-[500px]">
+              <h1 className="text-[56px] font-bold leading-tight">
                 Junte-se a nossa comunidade
               </h1>
               <p className="font-light">
@@ -186,27 +184,27 @@ export default function JoinUs() {
               {profiles.map((profile, index) => (
                 <div
                   key={index}
-                  className="size-10 bg-blue-800 rounded-full overflow-hidden border-2 border-white"
+                  className="size-10 overflow-hidden rounded-full border-2 border-white bg-blue-800"
                 >
                   <Image
                     width={12}
                     height={12}
                     src={profile.imgSrc}
                     alt={profile.alt}
-                    className="w-full h-full object-cover"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               ))}
-              <div className=" italic font-thin">
+              <div className="font-thin italic">
                 <p className="ml-8">More than 10,000 people have tried</p>
               </div>
             </div>
-            <div className="hover:shadow-lg cursor-pointer py-4 px-6 max-w-60 hover:brightness-105 rounded-md bg-[#5965F2]">
+            <div className="max-w-60 cursor-pointer rounded-md bg-[#5965F2] px-6 py-4 hover:shadow-lg hover:brightness-105">
               Acesse o nosso Discord!
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

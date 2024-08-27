@@ -13,5 +13,5 @@ export function CloudIcon() {
         fill-opacity="0.9"
       />
     </svg>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function AboutIcons1() {
   return (
@@ -36,7 +36,7 @@ function AboutIcons1() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
 function AboutIcons2() {
   return (
@@ -74,7 +74,7 @@ function AboutIcons2() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
 
 function AboutIcons3() {
@@ -113,7 +113,7 @@ function AboutIcons3() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
 
 function AboutIcons4() {
@@ -152,7 +152,7 @@ function AboutIcons4() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
 
 function AboutIcons5() {
@@ -174,7 +174,7 @@ function AboutIcons5() {
         fill="white"
       />
     </svg>
-  );
+  )
 }
 
-export { AboutIcons1, AboutIcons2, AboutIcons3, AboutIcons4, AboutIcons5 };
+export { AboutIcons1, AboutIcons2, AboutIcons3, AboutIcons4, AboutIcons5 }

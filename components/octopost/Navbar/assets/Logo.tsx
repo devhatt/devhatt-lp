@@ -134,7 +134,7 @@ function Page() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
 
-export default Page;
+export default Page
