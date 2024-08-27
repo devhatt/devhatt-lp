@@ -1,0 +1,25 @@
+name: Next CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup deps
+        uses: devhatt/workflows/.github/actions/pnpm-setup@main
+        with:
+          hasEnvSetup: "false"
+
+      - name: Build
+        run: pnpm build
+
+      - name: LigthouseCI
+        run: echo "Ja ja tem mais"
