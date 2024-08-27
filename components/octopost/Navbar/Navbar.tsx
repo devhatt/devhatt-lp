@@ -79,7 +79,7 @@ function Navbar() {
         <button className="relative m-2 overflow-hidden rounded-full bg-[#9A78F2] px-10 py-4 text-white drop-shadow-lg duration-1000 before:absolute before:-right-20 before:-top-36 before:h-60 before:w-60 before:rounded-full before:bg-[#996BEA] after:absolute after:-right-44 after:-top-40 after:h-60 after:w-60 after:rounded-full after:bg-[#935AE5] after:transition-all hover:scale-[97%] hover:brightness-105 hover:drop-shadow-2xl hover:after:right-10 hover:after:bg-gradient-to-r hover:after:from-pink-500 hover:after:to-violet-500">
           <span className="relative z-10">Teste agora</span>
     <header className="backdrop-blue-md fixed top-0 z-[100] h-[77px] bg-white w-screen ">
-      <div className="flex justify-evenly items-center p-2">
+      <div className="flex justify-evenly md:justify-between md:px-10 items-center p-2">
         <Logo />
         <button className="lg:hidden hover:cursor-pointer">
           <MenuLogo />
