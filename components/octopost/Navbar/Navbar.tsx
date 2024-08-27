@@ -36,7 +36,7 @@ function Navbar() {
 
   return (
     <header className="backdrop-blue-md fixed top-0 z-[100] h-[77px] bg-white w-screen ">
-      <div className="flex justify-evenly items-center p-2">
+      <div className="flex justify-evenly md:justify-between md:px-10 items-center p-2">
         <Logo />
         <button className="lg:hidden hover:cursor-pointer">
           <MenuLogo />

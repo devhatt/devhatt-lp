@@ -21,10 +21,10 @@ function Hero() {
 
   return (
     <section className="relative bg-pattern text-white flex flex-col  overflow-hidden">
-      <div className="flex flex-col mt-20 ">
-        <div className="mt-16">
-          <div className="mx-auto text-center">
-            <h1 className="lg:text-3xl text-3xl lg:leading-10 mb-8">
+      <div className="flex flex-col lg:flex-row lg:h-screen flex-center md:h-[80vh] mt-20 md:mt-0">
+        <div className="-mt-20 lg:space-y-10">
+          <div className="mx-auto lg:max-w-[450px] lg:text-start  text-center">
+            <h1 className="lg:text-3xl  text-3xl lg:leading-10 mb-8">
               Gerenciar redes sociais
               <br /> não deveria ser complicado.
               <br /> Descubra a Octopost
@@ -34,12 +34,12 @@ function Hero() {
               sociais. Feito para todos, de empreendedores a criadores de
               conteúdo.
             </p>
-            <button className="mb-4 px-9 py-5 font-light shadow-md drop-shadow border-white border rounded-full">
+            <button className="lg:mt-10 lg:py-4 mb-4 px-9 py-5 font-light shadow-md drop-shadow border-white border rounded-full">
               Experimente agora!
             </button>
           </div>
 
-          <div className="gap-2 hidden sm:flex justify-center">
+          <div className="gap-2 hidden sm:flex justify-center lg:justify-start">
             <div className="rounded-full flex justify-center items-center w-10 h-10 bg-white">
               <SvgIcon1 />
             </div>
@@ -68,10 +68,12 @@ function Hero() {
           >
             <HeroImg isMobile={isMobile} />
           </motion.div>
-          <div className={`absolute inset-0 top-64  animate-pulse`}>
+          <div
+            className={`absolute lg:left-[600px] inset-0 top-64 md:left-24 md:top-96 animate-pulse`}
+          >
             <StickerLogo1 />
           </div>
-          <div className="absolute -right-20 top-48 animate-pulse">
+          <div className="absolute -right-10 lg:right-[200px] top-48 md:top-96 md:right-20 animate-pulse">
             <StickerLogo2 />
           </div>
         </div>
