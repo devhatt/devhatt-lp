@@ -944,5 +944,5 @@ export default function JoinUsLogo() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

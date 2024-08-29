@@ -1,19 +1,19 @@
-"use client";
-import React from "react";
-import { motion } from "framer-motion";
-import { SvgIcon1, SvgIcon2, SvgIcon3, SvgIcon4 } from "./assets/socials";
-import HeroImg from "./assets/HeroImg";
-import StickerLogo1 from "./assets/StickerLogo1";
-import StickerLogo2 from "./assets/StickerLogo2";
-import WaveAnimation from "./assets/WaveAnimation";
+'use client'
+import React from 'react'
+import { motion } from 'framer-motion'
+import { SvgIcon1, SvgIcon2, SvgIcon3, SvgIcon4 } from './assets/socials'
+import HeroImg from './assets/HeroImg'
+import StickerLogo1 from './assets/StickerLogo1'
+import StickerLogo2 from './assets/StickerLogo2'
+import WaveAnimation from './assets/WaveAnimation'
 
 function Hero() {
   return (
-    <section className="bg-pattern text-white flex relative flex-col h-screen">
-      <div className="flex justify-center items-center h-screen">
+    <section className="bg-pattern relative flex h-screen flex-col text-white">
+      <div className="flex h-screen items-center justify-center">
         <div className="flex">
-          <div className="max-w-[420px] ml-4">
-            <h1 className="text-3xl leading-10 mb-5 font-bold">
+          <div className="ml-4 max-w-[420px]">
+            <h1 className="mb-5 text-3xl font-bold leading-10">
               Gerenciar redes sociais
               <br /> não deveria ser complicado.
               <br /> Descubra a Octopost
@@ -23,20 +23,20 @@ function Hero() {
               sociais. Feito para todos, de empreendedores a criadores de
               conteúdo.
             </p>
-            <button className="mb-10 px-4 my-7 py-3 font-light text-sm shadow-md drop-shadow border-white border rounded-full">
+            <button className="my-7 mb-10 rounded-full border border-white px-4 py-3 text-sm font-light shadow-md drop-shadow">
               Experimente agora
             </button>
             <div className="flex gap-2">
-              <div className="rounded-full flex justify-center items-center w-10 h-10 bg-white">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
                 <SvgIcon1 />
               </div>
-              <div className="rounded-full w-10 justify-center items-center h-10 flex bg-white">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
                 <SvgIcon2 />
               </div>
-              <div className="rounded-full w-10 justify-center items-center h-10 flex bg-white">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
                 <SvgIcon3 />
               </div>
-              <div className="rounded-full w-10 justify-center items-center flex h-10 bg-white">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
                 <SvgIcon4 />
               </div>
             </div>
@@ -48,7 +48,7 @@ function Hero() {
               }}
               transition={{
                 duration: 8,
-                ease: "easeInOut",
+                ease: 'easeInOut',
                 repeat: Infinity,
               }}
             >
@@ -63,11 +63,11 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute h-screen inset-0 z-999">
+      <div className="z-999 absolute inset-0 h-screen">
         <WaveAnimation />
       </div>
     </section>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

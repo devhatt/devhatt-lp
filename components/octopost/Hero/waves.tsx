@@ -1,9 +1,9 @@
-import React from "react";
-import Wavify from "react-wavify";
+import React from 'react'
+import Wavify from 'react-wavify'
 
 const Waves = () => {
   return (
-    <div className="relative w-full h-32 overflow-hidden">
+    <div className="relative h-32 w-full overflow-hidden">
       <Wavify
         fill="#A1C4FD"
         paused={false}
@@ -27,7 +27,7 @@ const Waves = () => {
         className="absolute bottom-0 w-full"
       />
     </div>
-  );
-};
+  )
+}
 
-export default Waves;
+export default Waves

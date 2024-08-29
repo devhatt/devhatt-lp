@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function AboutLogo() {
   return (
@@ -203,7 +203,7 @@ function AboutLogo() {
       ></path>
       <mask
         id="mask0_242_392"
-        style={{ maskType: "luminance" }}
+        style={{ maskType: 'luminance' }}
         width="380"
         height="381"
         x="413"
@@ -1013,7 +1013,7 @@ function AboutLogo() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
 
-export default AboutLogo;
+export default AboutLogo

@@ -1,34 +1,34 @@
-"use client";
+'use client'
 
-import { useState, useRef, useEffect } from "react";
-import Bubble from "./assets/Bubble";
-import VectorLeft from "./assets/VectorLeft";
-import VectorRight from "./assets/VectorRight";
-import Card from "./Card";
+import { useRef, useState } from 'react'
+import Bubble from './assets/Bubble'
+import VectorLeft from './assets/VectorLeft'
+import VectorRight from './assets/VectorRight'
+import Card from './Card'
 
-import { CARDS } from "./utils/Cards";
+import { CARDS } from './utils/Cards'
 
 function Works() {
-  const [activeSlide, setActiveSlide] = useState<number>(0);
-  const scrollContainerRef = useRef<HTMLUListElement>(null);
+  const [activeSlide, setActiveSlide] = useState<number>(0)
+  const scrollContainerRef = useRef<HTMLUListElement>(null)
 
   const handleScrollEvent = (): void => {
     if (scrollContainerRef.current) {
-      const scrollLeft = scrollContainerRef.current.scrollLeft;
-      const width = scrollContainerRef.current.clientWidth;
-      const newActiveSlide = Math.round(scrollLeft / width);
-      setActiveSlide(newActiveSlide);
+      const scrollLeft = scrollContainerRef.current.scrollLeft
+      const width = scrollContainerRef.current.clientWidth
+      const newActiveSlide = Math.round(scrollLeft / width)
+      setActiveSlide(newActiveSlide)
     }
-  };
+  }
 
   return (
-    <section className="mb-60 h-screen bg-octopost-primaryWhite flex items-center relative overflow-hidden">
-      <div className="m-auto flex flex-col max-w-7xl z-20 overflow-hidden gap-9 desktop:gap-32">
-        <div className="flex flex-col max-w-[589px] m-0 items-center gap-10 px-10 self-center desktop:px-5">
-          <h2 className="font-semibold text-octopost-primaryViolet text-4xl text-center">
+    <section className="relative mb-60 flex h-screen items-center overflow-hidden bg-octopost-primaryWhite">
+      <div className="z-20 m-auto flex max-w-7xl flex-col gap-9 overflow-hidden desktop:gap-32">
+        <div className="m-0 flex max-w-[589px] flex-col items-center gap-10 self-center px-10 desktop:px-5">
+          <h2 className="text-center text-4xl font-semibold text-octopost-primaryViolet">
             Como Funciona?
           </h2>
-          <p className="h-24 overflow-hidden text-ellipsis leading-6 text-octopost-tertiaryViolet text-center tracking-tighter">
+          <p className="h-24 overflow-hidden text-ellipsis text-center leading-6 tracking-tighter text-octopost-tertiaryViolet">
             O OctoPost simplifica o compartilhamento de conteúdo em diversas
             plataformas. Veja como podemos transformar sua experiência online.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -37,7 +37,7 @@ function Works() {
         </div>
 
         <ul
-          className="flex overflow-x-auto gap-4 no-scrollbar desktop:gap-7"
+          className="no-scrollbar flex gap-4 overflow-x-auto desktop:gap-7"
           ref={scrollContainerRef}
           onScroll={handleScrollEvent}
         >
@@ -54,38 +54,38 @@ function Works() {
           </li>
         </ul>
       </div>
-      <div className="w-fit absolute bottom-12 inset-x-0 mx-auto z-50 gap-3 hidden mobile:flex">
+      <div className="absolute inset-x-0 bottom-12 z-50 mx-auto hidden w-fit gap-3 mobile:flex">
         {Array.from({ length: CARDS.length }).map((_, index) => (
           <div
             key={index}
-            className={`w-3 h-3 border-[1px] rounded-full transition-all duration-500 ${index === activeSlide ? "bg-octopost-primaryViolet border-octopost-primaryViolet" : "border-[#A1A1A1]"}`}
+            className={`h-3 w-3 rounded-full border-[1px] transition-all duration-500 ${index === activeSlide ? 'border-octopost-primaryViolet bg-octopost-primaryViolet' : 'border-[#A1A1A1]'}`}
           ></div>
         ))}
       </div>
 
-      <div className="w-full h-3/5 absolute bg-gradient-works bottom-0 opacity-40"></div>
+      <div className="absolute bottom-0 h-3/5 w-full bg-gradient-works opacity-40"></div>
 
       <div className="absolute right-0 top-0 mobile:-right-[31rem]">
         <VectorRight />
       </div>
-      <div className="absolute left-0 bottom-0 mobile:-left-[38rem]">
+      <div className="absolute bottom-0 left-0 mobile:-left-[38rem]">
         <VectorLeft />
       </div>
 
-      <div className="absolute left-[10%] bottom-[8%] mobile:-left-20 mobile:bottom-1 desktop:animate-pulse mobile:opacity-40">
+      <div className="absolute bottom-[8%] left-[10%] mobile:-left-20 mobile:bottom-1 mobile:opacity-40 desktop:animate-pulse">
         <Bubble />
       </div>
-      <div className="absolute left-[24.3%] top-[30.2%] scale-[.71] rotate-90 mobile:left-72 mobile:top-52 desktop:animate-pulse mobile:opacity-40">
+      <div className="absolute left-[24.3%] top-[30.2%] rotate-90 scale-[.71] mobile:left-72 mobile:top-52 mobile:opacity-40 desktop:animate-pulse">
         <Bubble />
       </div>
-      <div className="absolute right-[15%] top-[25%] scale-75  mobile:-left-36 mobile:top-28 desktop:animate-pulse mobile:opacity-40">
+      <div className="absolute right-[15%] top-[25%] scale-75 mobile:-left-36 mobile:top-28 mobile:opacity-40 desktop:animate-pulse">
         <Bubble />
       </div>
-      <div className="absolute right-[12%] bottom-[5%] scale-[1.31] -rotate-90  mobile:left-96 mobile:-bottom-32 desktop:animate-pulse mobile:opacity-40">
+      <div className="absolute bottom-[5%] right-[12%] -rotate-90 scale-[1.31] mobile:-bottom-32 mobile:left-96 mobile:opacity-40 desktop:animate-pulse">
         <Bubble />
       </div>
     </section>
-  );
+  )
 }
 
-export default Works;
+export default Works

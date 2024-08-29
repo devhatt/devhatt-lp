@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export const SvgIcon1 = () => (
   <svg
@@ -13,7 +13,7 @@ export const SvgIcon1 = () => (
       fill="#894DF6"
     />
   </svg>
-);
+)
 
 export const SvgIcon2 = () => (
   <svg
@@ -28,7 +28,7 @@ export const SvgIcon2 = () => (
       fill="#894DF6"
     />
   </svg>
-);
+)
 
 export const SvgIcon3 = () => (
   <svg
@@ -43,7 +43,7 @@ export const SvgIcon3 = () => (
       fill="#894DF6"
     />
   </svg>
-);
+)
 
 export const SvgIcon4 = () => (
   <svg
@@ -58,7 +58,7 @@ export const SvgIcon4 = () => (
       fill="#894DF6"
     />
   </svg>
-);
+)
 
 const SvgCollection = () => {
   return (
@@ -71,7 +71,7 @@ const SvgCollection = () => {
         <SvgIcon4 />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SvgCollection;
+export default SvgCollection

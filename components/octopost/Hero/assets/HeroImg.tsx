@@ -33838,7 +33838,7 @@ function HeroImg() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
-export default HeroImg;
+export default HeroImg
