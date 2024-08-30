@@ -1,4 +1,6 @@
-export default function Instagram() {
+import { SVGProps } from 'react'
+
+export default function Instagram(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="23"
@@ -6,6 +8,7 @@ export default function Instagram() {
       viewBox="0 0 23 22"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         fill-rule="evenodd"

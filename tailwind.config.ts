@@ -36,6 +36,7 @@ const config: Config = {
         },
 
         petdex: {
+          primayWhite: '#fff',
           primaryBlue: '#62DCF6',
           secondaryBlue: '#1C85F3',
           primaryYellow: '#FFC542',
@@ -43,6 +44,7 @@ const config: Config = {
           secondaryGreen: '#003459',
           primaryPurple: '#564AE4',
           darkBlue: '#091846',
+          darkBlueSecondary: '#1E2833',
           primaryPink: '#DF3D82',
           pastelBlue: '#BAD8EB',
           pastelYellow: '#FFF2A6',

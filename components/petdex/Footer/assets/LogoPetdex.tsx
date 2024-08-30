@@ -1,4 +1,6 @@
-export default function LogoPetdex() {
+import { SVGProps } from 'react'
+
+export default function LogoPetdex(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="147"
@@ -6,6 +8,7 @@ export default function LogoPetdex() {
       viewBox="0 0 147 29"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <g id="Group 1000001834">
         <g id="Group 1000001859">
