@@ -2,11 +2,11 @@
 
 import { useState } from 'react'
 import { Logo } from './assets/Logo'
-import { MenuButton } from './assets/Menu-button'
+import { MenuButton } from './assets/MenuButton'
 import { SearchIcon } from './assets/SearchIcon'
 import { Menu } from './assets/Menu'
-import { LogoMobile } from './assets/Logo-mobile'
-import { MenuButtonMobile } from './assets/Menu-button-mobile'
+import { LogoMobile } from './assets/LogoMobile'
+import { MenuButtonMobile } from './assets/MenuButtonMobile'
 import { NavbarTypes } from './Navbar.types'
 
 function Navbar() {
@@ -42,7 +42,7 @@ function Navbar() {
             <SearchIcon
               handleSearchButton={handleSearchButton} />
             <input
-              className={` hidden lg:block`}
+              className={`${isSearch ? 'hidden' : 'block'}`}
               type="search"
               name="search"
               placeholder="Pesquise seu amigo aqui!"
