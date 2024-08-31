@@ -1,5 +1,11 @@
+import { Navbar } from "@/components/petdex/Navbar/Navbar";
+
 function Page() {
-  return <h1>Petdex</h1>
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default Page
