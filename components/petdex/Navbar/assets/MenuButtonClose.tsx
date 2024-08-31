@@ -1,6 +1,6 @@
 'use client'
 
-function MenuButton({ handleButton }) {
+function MenuButtonClose({ handleButton }) {
 
   return (
     <>
@@ -13,4 +13,4 @@ function MenuButton({ handleButton }) {
   )
 }
 
-export { MenuButton }
+export { MenuButtonClose }
