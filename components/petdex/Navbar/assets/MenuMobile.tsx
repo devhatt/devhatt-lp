@@ -1,8 +1,8 @@
 import Link from "next/link"
 
-function Menu() {
+function MenuMobile({ isOpen }) {
   return (
-    <ul className="hidden lg:space-x-10 lg:space-y-0 lg:ml-3 lg:flex">
+    <ul className={`${isOpen ? '' : 'hidden'} space-y-6 ml-10 lg:hidden`}>
       <li className='text-petdex-secondaryGreen'>
         <Link className='hover:underline hover:font-semibold' href="#">Home</Link>
       </li>
@@ -12,8 +12,8 @@ function Menu() {
       <li className='text-petdex-secondaryGreen'>
         <Link className='hover:underline hover:font-semibold' href="#">Contato</Link>
       </li>
-    </ul>
+    </ul >
   )
 }
 
-export { Menu }
+export { MenuMobile }

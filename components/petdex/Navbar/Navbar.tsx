@@ -8,6 +8,7 @@ import { Menu } from './assets/Menu'
 import { LogoMobile } from './assets/LogoMobile'
 import { MenuButtonMobile } from './assets/MenuButtonMobile'
 import { NavbarTypes } from './Navbar.types'
+import { MenuMobile } from './assets/MenuMobile'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,9 +30,10 @@ function Navbar() {
               }
             </div>
             <div
-              className={`${!isOpen ? '' : 'left-[-400px]'} absolute flex flex-col left-0 top-[8rem] lg:relative lg:left-0 lg:top-0 `}
+              className={` absolute flex flex-col left-0 top-[8rem] lg:relative lg:left-0 lg:top-0 `}
             >
               <Menu />
+              <MenuMobile isOpen={isOpen} />
             </div>
           </nav>
         </div>
@@ -50,13 +52,13 @@ function Navbar() {
 
           </div>
           <button
-            className={`${!isOpen ? 'block' : 'hidden'} absolute left-0 top-[30rem] bg-petdex-secondaryGreen text-white px-10 py-3 rounded-3xl lg:relative lg:block lg:top-0 `}
+            className={`${isOpen ? 'block' : 'hidden'} absolute left-0 top-[30rem] bg-petdex-secondaryGreen text-white px-10 py-3 rounded-3xl lg:relative lg:block lg:top-0 `}
           >
             Entrar | Cadastrar
           </button>
           {isSearch &&
             <div className='cursor-pointer lg:hidden'>
-              {!isOpen
+              {isOpen
                 ? <MenuButton handleButton={handleButton} />
                 : <MenuButtonMobile handleButton={handleButton} />
               }
