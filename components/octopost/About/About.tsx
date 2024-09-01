@@ -10,9 +10,9 @@ import CloudIcon from "./assets/CloudIcon";
 
 export default function About() {
   return (
-    <section className="flex mx-48  h-screen bg-white">
-      <div className=" flex-center w-1/2">
-        <div className="relative">
+    <section className="flex bg-white md:flex-center  lg:mx-40 lg:flex-center">
+      <div className="lg:flex-center">
+        <div className="relative hidden lg:flex">
           <AboutLogo />
           <div className="absolute top-36 left-14">
             <AboutIcons1 />
@@ -31,9 +31,9 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className=" max-w-3/5 flex-center ">
-        <div className="space-y-12">
-          <h1 className="text-[#a076f9] text-5xl font-extrabold">
+      <div className="max-w-[445px] md:flex-center px-4 flex-center lg:max-w-full  lg:flex-center">
+        <div className="space-y-12 text-wrap text-center truncate ">
+          <h1 className="text-[#a076f9] lg:text-5xl  text-4xl font-bold mt-20 lg:font-extrabold">
             O que é a Octopost?
           </h1>
           <p className=" text-[#5C5CA0] w-full font-light">
@@ -42,7 +42,7 @@ export default function About() {
             social não está presente ainda no app, não se preocupe, você pode
             desenvolver um módulo pra usar essa nova rede social no app!
           </p>
-          <div className="flex gap-8">
+          <div className="flex gap-8 max-w-1/3 lg:flex-row  lg:flex-nowrap flex-wrap-reverse flex-center">
             <div className="">
               <CloudIcon />
               <p className="text-center primary-text-gradient">
