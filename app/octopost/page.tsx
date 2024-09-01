@@ -14,8 +14,6 @@ function Page() {
       <Hero />
       <About />
       <Works />
-      <Datas />
-
       <Faq />
       <JoinUs />
       <Footer />

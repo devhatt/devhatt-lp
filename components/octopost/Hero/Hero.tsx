@@ -24,7 +24,7 @@ function Hero() {
       <div className="flex flex-col lg:flex-row lg:h-screen flex-center md:h-[80vh] mt-20 md:mt-0">
         <div className="-mt-20 lg:space-y-10">
           <div className="mx-auto lg:max-w-[450px] lg:text-start  text-center">
-            <h1 className="lg:text-3xl  text-3xl lg:leading-10 mb-8">
+            <h1 className="lg:text-3xl  text-3xl mt-32 lg:leading-10 mb-8">
               Gerenciar redes sociais
               <br /> não deveria ser complicado.
               <br /> Descubra a Octopost

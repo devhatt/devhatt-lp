@@ -1,4 +1,6 @@
-import { CloudIcon } from './assets/CloudIcon'
+import { CloudIcon } from "./assets/CloudIcon";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useRef } from "react";
 
 export default function Datas() {
   const dataNumbers = [
@@ -23,6 +25,20 @@ export default function Datas() {
       text: 'Dados Importantes',
     },
   ]
+
+  const scrollRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -340, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 340, behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="flex-center relative h-[247px] flex-wrap overflow-hidden bg-gradient-to-r from-octopost-primaryViolet to-octopost-primaryPink">
