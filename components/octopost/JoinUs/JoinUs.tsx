@@ -162,10 +162,10 @@ export default function JoinUs() {
       <div className="flex-shrink-0">
         <Datas />
       </div>
-      <div className="relative flex-grow overflow-hidden bg-[#2C3680] p-2 sm:p-0">
+      <div className="overflow-hidden flex-grow bg-[#2C3680] p-4 sm:p-0 relative ">
         <RenderLayers />
-        <div className="flex-center absolute inset-0 gap-32">
-          <div className="hidden sm:block">
+        <div className="absolute flex-center p-4 inset-0 gap-32">
+          <div className="hidden lg:block ">
             <JoinUsLogo />
           </div>
           <div className="space-y-10 text-white">
