@@ -12,12 +12,12 @@ export default function Footer() {
     setIsClicked(true);
   };
   return (
-    <footer className="flex justify-evenly items-center bg-[#221440] text-octopost-primaryWhite h-[428px] w-full">
+    <footer className="flex flex-col md:flex-row lg:flex-row justify-evenly items-center bg-[#221440] text-octopost-primaryWhite h-[428px] w-full">
       <div className="space-y-4">
         <div className="mix-blend-luminosity">
           <Logo />
         </div>
-        <div className="font-bold leading-10 space-x-4  max-w-[250px]">
+        <div className="font-bold leading-10 space-x-4 text-center  max-w-[250px]">
           <Link href="/"> About Us</Link>
           <Link href="/">Team</Link>
           <Link href="/">Careers</Link>
@@ -43,11 +43,11 @@ export default function Footer() {
           <motion.button
             initial={{ opacity: 0.7 }}
             animate={{
-              opacity: 1,
+              opacity: isClicked ? 0.3 : 0.7,
               x: isClicked ? 1000 : 0,
               y: isClicked ? -1000 : 0,
             }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 2.5 }}
             className="flex-start hover:brightness-125 hover:animate-pulse outline outline-cyan-800/30"
             onClick={handleClick}
           >

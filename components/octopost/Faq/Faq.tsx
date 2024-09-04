@@ -5,7 +5,7 @@ import FaqLogo from "./assets/FaqLogo";
 
 export default function Faq() {
   return (
-    <section className="p-4 h-screen">
+    <section className="p-4 min-h-[80vh] flex justify-center">
       <div className="gap-10 flex-center">
         <AnimatePresence>
           <motion.div
@@ -22,7 +22,7 @@ export default function Faq() {
             whileInView={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
             exit={{ x: 300, opacity: 0 }}
-            className="hidden sm:block"
+            className="hidden lg:block"
           >
             <FaqLogo />
           </motion.div>
