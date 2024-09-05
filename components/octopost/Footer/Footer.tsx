@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import Logo from "../Navbar/assets/Logo";
 import { SvgIcon1, SvgIcon2, SvgIcon3, SvgIcon4 } from "../Hero/assets/socials";
@@ -13,7 +14,13 @@ export default function Footer() {
   };
   return (
     <footer className="flex flex-col md:flex-row lg:flex-row justify-evenly items-center bg-[#221440] text-octopost-primaryWhite h-[428px] w-full">
-      <div className="space-y-4">
+      <motion.div
+        initial={{ y: 300, opacity: 0, scale: 0.9 }}
+        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4 }}
+        exit={{ y: 300, opacity: 0 }}
+        className="space-y-4"
+      >
         <div className="mix-blend-luminosity">
           <Logo />
         </div>
@@ -24,9 +31,15 @@ export default function Footer() {
           <Link href="/"> Socials</Link>
           <Link href="/"> Activity</Link>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="space-y-4 max-w-[300px]">
+      <motion.div
+        initial={{ y: 300, opacity: 0, scale: 0.9 }}
+        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4 }}
+        exit={{ y: 300, opacity: 0 }}
+        className="space-y-4 max-w-[300px]"
+      >
         <div className="space-y-4">
           <h1 className="font-bold">Newsletter</h1>
           <p className="">
@@ -69,7 +82,7 @@ export default function Footer() {
             <SvgIcon4 />
           </div>
         </div>
-      </div>
+      </motion.div>
     </footer>
   );
 }

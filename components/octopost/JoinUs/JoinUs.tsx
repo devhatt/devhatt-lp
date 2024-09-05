@@ -167,10 +167,22 @@ export default function JoinUs() {
       <div className="overflow-hidden flex-grow bg-[#2C3680] p-4 sm:p-0 relative ">
         <RenderLayers />
         <div className="absolute flex-center p-4 inset-0 gap-32">
-          <div className="hidden lg:block ">
+          <motion.div
+            className="hidden lg:block "
+            initial={{ x: -300, opacity: 0, scale: 0.9 }}
+            whileInView={{ x: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+            exit={{ x: -300, opacity: 0 }}
+          >
             <JoinUsLogo />
-          </div>
-          <div className="text-white space-y-10">
+          </motion.div>
+          <motion.div
+            initial={{ x: 300, opacity: 0, scale: 0.9 }}
+            whileInView={{ x: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            exit={{ x: 300, opacity: 0 }}
+            className="text-white space-y-10"
+          >
             <div className="max-w-[500px] ">
               <h1 className="text-[56px] leading-tight font-bold ">
                 Junte-se a nossa comunidade
@@ -204,7 +216,7 @@ export default function JoinUs() {
             <div className="hover:shadow-lg cursor-pointer py-4 px-6 max-w-60 hover:brightness-105 rounded-md bg-[#5965F2]">
               Acesse o nosso Discord!
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

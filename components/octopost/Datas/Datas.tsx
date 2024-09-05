@@ -1,3 +1,5 @@
+"use client";
+import { motion, stagger } from "framer-motion";
 import { CloudIcon } from "./assets/CloudIcon";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useRef } from "react";
@@ -56,13 +58,16 @@ export default function Datas() {
 
       <div
         ref={scrollRef}
-        className="flex p-2 max-h-64 min-h-64 lg:flex-row lg:maxh-64 lg:min-h-64 flex-nowrap overflow-x-auto overflow-y-hidden lg:h-[247px] space-x-5"
+        className=" lg:h-40 lg:max-h-[50px] flex p-2 max-h-64 min-h-64 lg:flex-row  flex-nowrap overflow-x-auto overflow-y-hidden space-x-5"
       >
         {dataNumbers.map(({ icon: Icon }, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: index * 0.4 }}
             key={index}
             className={`flex ml-0 lg:flex-row lg:gap-5 gap-5 lg:max-w-[340px] w-full z-10 relative flex-row
-${index % 2 === 0 ? "ml-56 mt-32 w-full" : ""}`}
+    ${index % 2 === 0 ? "ml-56 mt-32 w-full" : ""}`}
           >
             <div className="group">
               <div className="size-24 flex-center group-hover:scale-x-[-1] transition-all bg-white/30 rounded-md">
@@ -75,7 +80,7 @@ ${index % 2 === 0 ? "ml-56 mt-32 w-full" : ""}`}
                 Dados importantes
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 

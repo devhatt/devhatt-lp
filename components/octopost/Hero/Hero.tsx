@@ -23,7 +23,13 @@ function Hero() {
     <section className="relative bg-pattern text-white flex flex-col  overflow-hidden">
       <div className="flex flex-col lg:flex-row lg:h-screen flex-center md:h-[80vh] mt-20 md:mt-0">
         <div className="-mt-20 lg:space-y-10">
-          <div className="mx-auto lg:max-w-[450px] lg:text-start  text-center">
+          <motion.div
+            initial={{ x: -300, opacity: 0, scale: 0.9 }}
+            whileInView={{ x: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+            exit={{ x: -300, opacity: 0 }}
+            className="mx-auto lg:max-w-[450px] lg:text-start  text-center"
+          >
             <h1 className="lg:text-3xl  text-3xl mt-32 lg:leading-10 mb-8">
               Gerenciar redes sociais
               <br /> não deveria ser complicado.
@@ -37,7 +43,7 @@ function Hero() {
             <button className="lg:mt-10 lg:py-4 mb-4 px-9 py-5 font-light shadow-md drop-shadow border-white border rounded-full">
               Experimente agora!
             </button>
-          </div>
+          </motion.div>
 
           <div className="gap-2 hidden sm:flex justify-center lg:justify-start">
             <div className="rounded-full flex justify-center items-center w-10 h-10 bg-white">
@@ -55,7 +61,13 @@ function Hero() {
           </div>
         </div>
 
-        <div className="-mt-20">
+        <motion.div
+          initial={{ x: 300, opacity: 0, scale: 0.9 }}
+          whileInView={{ x: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          exit={{ x: 300, opacity: 0 }}
+          className="-mt-20"
+        >
           <motion.div
             animate={{
               y: [0, -20, 0, 20, 0],
@@ -76,7 +88,7 @@ function Hero() {
           <div className="absolute -right-10 lg:right-[200px] top-48 md:top-96 md:right-20 animate-pulse">
             <StickerLogo2 />
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="inset-x-0 absolute -bottom-px mt-auto">
         <WaveAnimation />

@@ -35,8 +35,14 @@ function Navbar() {
   const [hoverLink, setHoverLink] = useState(pathname);
 
   return (
-    <header className="backdrop-blue-md fixed top-0 z-[100] h-[77px] bg-white w-screen ">
-      <div className="flex justify-evenly md:justify-between md:px-10 items-center p-2">
+    <header className="backdrop-blur-md fixed top-0 z-[100]  bg-white w-screen ">
+      <motion.div
+        initial={{ y: -100, opacity: 0, scale: 0.9 }}
+        animate={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4 }}
+        exit={{ y: 0, opacity: 0 }}
+        className="flex justify-evenly md:justify-between  md:px-10 items-center p-2"
+      >
         <Logo />
         <button className="lg:hidden hover:cursor-pointer">
           <MenuLogo />
@@ -50,7 +56,7 @@ function Navbar() {
                 key={item.path}
                 href={item.path}
                 className={`relative border-violet-500 px-4 py-2 text-xl text-[#5C5CA0] no-underline duration-300 ease-in 
-lg:text-base ${isActive ? "font-semibold" : "font-normal"}`}
+lg:text-xl ${isActive ? "font-semibold" : "font-normal"}`}
                 onMouseOver={() => {
                   setHoverLink(item.path);
                 }}
@@ -83,7 +89,7 @@ lg:text-base ${isActive ? "font-semibold" : "font-normal"}`}
             <span className="relative z-10">Teste agora</span>
           </button>
         </div>
-      </div>
+      </motion.div>
     </header>
   );
 }

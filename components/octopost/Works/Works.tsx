@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import Bubble from "./assets/Bubble";
 import VectorLeft from "./assets/VectorLeft";
@@ -72,18 +73,56 @@ function Works() {
         <VectorLeft />
       </div>
 
-      <div className="absolute left-[10%] bottom-[8%] mobile:-left-20 mobile:bottom-1 desktop:animate-pulse mobile:opacity-40">
-        <Bubble />
-      </div>
-      <div className="absolute left-[24.3%] top-[30.2%] scale-[.71] rotate-90 mobile:left-72 mobile:top-52 desktop:animate-pulse mobile:opacity-40">
-        <Bubble />
-      </div>
-      <div className="absolute right-[15%] top-[25%] scale-75  mobile:-left-36 mobile:top-28 desktop:animate-pulse mobile:opacity-40">
-        <Bubble />
-      </div>
-      <div className="absolute right-[12%] bottom-[5%] scale-[1.31] -rotate-90  mobile:left-96 mobile:-bottom-32 desktop:animate-pulse mobile:opacity-40">
-        <Bubble />
-      </div>
+      {[
+        {
+          className:
+            "absolute left-[10%] bottom-[8%] mobile:-left-20 mobile:bottom-1 desktop:animate-pulse mobile:opacity-40",
+          delay: 0,
+        },
+        {
+          className:
+            "absolute left-[24.3%] top-[30.2%] scale-[.71] rotate-90 mobile:left-72 mobile:top-52 desktop:animate-pulse mobile:opacity-40",
+          delay: 1,
+        },
+        {
+          className:
+            "absolute right-[15%] top-[25%] scale-75 mobile:-left-36 mobile:top-28 desktop:animate-pulse mobile:opacity-40",
+          delay: 2,
+        },
+        {
+          className:
+            "absolute right-[12%] bottom-[5%] scale-[1.31] -rotate-90 mobile:left-96 mobile:-bottom-32 desktop:animate-pulse mobile:opacity-40",
+          delay: 3,
+        },
+      ].map(({ className, delay }, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, scale: 0.1 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: [0, -3, 0],
+            rotate: [0, 2, 0],
+          }}
+          transition={{
+            duration: 3,
+            delay: delay * 1,
+            y: {
+              repeat: Infinity,
+              duration: 3,
+              ease: "easeInOut",
+            },
+            rotate: {
+              repeat: Infinity,
+              duration: 3,
+              ease: "easeInOut",
+            },
+          }}
+          className={className}
+        >
+          <Bubble />
+        </motion.div>
+      ))}
     </section>
   );
 }
