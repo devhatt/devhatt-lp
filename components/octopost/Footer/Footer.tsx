@@ -3,15 +3,10 @@
 import Link from "next/link";
 import Logo from "../Navbar/assets/Logo";
 import { SvgIcon1, SvgIcon2, SvgIcon3, SvgIcon4 } from "../Hero/assets/socials";
-import InputIcon from "./assets/InputIcon";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import InputMail from "./InputMail";
 
 export default function Footer() {
-  const [isClicked, setIsClicked] = useState(false)
-  const handleClick = () => {
-    setIsClicked(true)
-  }
   return (
     <footer className="flex flex-col md:flex-row lg:flex-row justify-evenly items-center bg-[#221440] text-octopost-primaryWhite h-[428px] w-full">
       <motion.div
@@ -48,24 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="flex-start">
-          <motion.input
-            className="flex-start mr-[3px] h-[46px] bg-cyan-900/20 p-2 text-white outline outline-cyan-800/30"
-            type="text"
-            placeholder="Entre com seu email"
-          />
-          <motion.button
-            initial={{ opacity: 0.7 }}
-            animate={{
-              opacity: isClicked ? 0.3 : 0.7,
-              x: isClicked ? 1000 : 0,
-              y: isClicked ? -1000 : 0,
-            }}
-            transition={{ duration: 2.5 }}
-            className="flex-start hover:brightness-125 hover:animate-pulse outline outline-cyan-800/30"
-            onClick={handleClick}
-          >
-            <InputIcon />
-          </motion.button>
+          <InputMail />
         </div>
 
         <div className="flex gap-2">
