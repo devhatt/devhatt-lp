@@ -12,8 +12,7 @@ export default function InputMail({}: Props) {
   };
 
   return (
-    <div className="flex items-center">
-      {/* Input que vai encolher da esquerda para a direita */}
+    <div className="flex items-center over">
       <motion.div
         className="flex"
         initial={{ width: "250px", opacity: 1 }}
@@ -46,13 +45,13 @@ export default function InputMail({}: Props) {
           className="relative"
           initial={{ x: 0, y: 0, rotate: 0, scale: 1.5 }}
           animate={{
-            x: isClicked ? 1000 : 0,
-            y: isClicked ? -1000 : 0,
+            x: isClicked ? 700 : 0,
+            y: isClicked ? -700 : 0,
             scale: isClicked ? 1.8 : 1.5,
             rotate: isClicked ? [0, -15, 15, -10, 10, 0] : 0, // Tremor antes de voar
           }}
           transition={{
-            duration: 2.5,
+            duration: 1,
             delay: isClicked ? 1.8 : 0,
             scale: {
               duration: 1.5,
