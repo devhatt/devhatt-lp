@@ -1,5 +1,11 @@
+import Footer from '@/components/petdex/Footer/Footer'
+
 function Page() {
-  return <h1>Petdex</h1>
+  return (
+    <>
+      <Footer />
+    </>
+  )
 }
 
 export default Page
