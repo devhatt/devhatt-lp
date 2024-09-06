@@ -1,12 +1,12 @@
-'use client'
-import { AnimatePresence, motion } from 'framer-motion'
-import Accordion from './Accordion'
-import FaqLogo from './assets/FaqLogo'
+"use client";
+import { AnimatePresence, motion } from "framer-motion";
+import Accordion from "./Accordion";
+import FaqLogo from "./assets/FaqLogo";
 
 export default function Faq() {
   return (
-    <section className="p-4 min-h-[80vh] flex justify-center">
-      <div className="gap-10 flex-center">
+    <section className="flex min-h-[80vh] justify-center overflow-x-hidden p-4">
+      <div className="flex-center gap-10 overflow-x-hidden">
         <AnimatePresence>
           <motion.div
             initial={{ x: -300, opacity: 0, scale: 0.9 }}
@@ -20,7 +20,7 @@ export default function Faq() {
           <motion.div
             initial={{ x: 300, opacity: 0, scale: 0.9 }}
             whileInView={{ x: 0, opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, ease: 'easeOut' }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             exit={{ x: 300, opacity: 0 }}
             className="hidden lg:block"
           >
@@ -29,5 +29,5 @@ export default function Faq() {
         </AnimatePresence>
       </div>
     </section>
-  )
+  );
 }

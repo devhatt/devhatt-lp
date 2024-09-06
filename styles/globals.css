@@ -11,31 +11,31 @@ body {
 
 @layer utilities {
   .flex-center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
   }
 
   .flex-between {
-    @apply flex justify-between items-center;
+    @apply flex items-center justify-between;
   }
 
   .flex-start {
-    @apply flex justify-start items-center;
+    @apply flex items-center justify-start;
   }
 
   .flex-end {
-    @apply flex justify-end items-center;
+    @apply flex items-center justify-end;
   }
 
   .btn-primary {
-    @apply bg-primary-purple text-secondary-purple p-1 rounded !important;
+    @apply bg-primary-purple text-secondary-purple rounded p-1 !important;
   }
 
   .btn-secondary {
-    @apply bg-secondary-purple text-primary-purple  p-1 rounded !important;
+    @apply bg-secondary-purple text-primary-purple rounded p-1 !important;
   }
 
   .btn-tertiary {
-    @apply bg-secondary-red text-primary-red  p-1 rounded !important;
+    @apply bg-secondary-red text-primary-red rounded p-1 !important;
   }
 
   .primary-gradient {
