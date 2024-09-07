@@ -28,7 +28,7 @@ export default function Datas() {
     },
   ];
 
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const scrollLeft = () => {
     if (scrollRef.current) {
