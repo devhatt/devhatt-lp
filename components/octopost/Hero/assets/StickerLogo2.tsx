@@ -1989,5 +1989,5 @@ export default function StickerLogo2() {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }

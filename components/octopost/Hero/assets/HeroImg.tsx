@@ -1,5 +1,9 @@
-function HeroImg({isMobile}) {
-const width = isMobile ? "480" : "840";
+interface HeroImgProps {
+  isMobile: boolean;
+}
+
+function HeroImg({ isMobile }: HeroImgProps) {
+  const width = isMobile ? "480" : "840";
   const height = isMobile ? "400" : "540";
   return (
     <svg
@@ -33840,7 +33844,7 @@ const width = isMobile ? "480" : "840";
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }
 
-export default HeroImg
+export default HeroImg;

@@ -1,9 +1,9 @@
-'use client'
-import { motion } from 'framer-motion'
-import JoinUsLogo from './assets/JoinUsLogo'
+"use client";
+import { motion } from "framer-motion";
+import JoinUsLogo from "./assets/JoinUsLogo";
 
-import Datas from '@/components/octopost/Datas/Datas'
-import Image from 'next/image'
+import Datas from "@/components/octopost/Datas/Datas";
+import Image from "next/image";
 
 const RenderLayers = () => {
   return (
@@ -11,30 +11,30 @@ const RenderLayers = () => {
       <motion.div
         animate={{ y: [50, 0] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 10,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer absolute inset-0"
       ></motion.div>
       <motion.div
         animate={{ y: [90, 0] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 10,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer1 absolute inset-0"
       ></motion.div>
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 4,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer2 absolute bottom-[550px] left-[420px] size-32"
       ></motion.div>
@@ -42,10 +42,10 @@ const RenderLayers = () => {
       <motion.div
         animate={{ x: [0, 20], y: [0, 20] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 4,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer3 absolute bottom-[450px] left-[20px] h-20 w-72"
       ></motion.div>
@@ -53,10 +53,10 @@ const RenderLayers = () => {
       <motion.div
         animate={{ x: [-30, 0], y: [20, -20] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 8,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer4 absolute bottom-[600px] left-[680px] h-20 w-72 opacity-70"
       ></motion.div>
@@ -64,10 +64,10 @@ const RenderLayers = () => {
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 4,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer5 absolute bottom-[500px] left-[880px] h-40 w-72 opacity-50"
       ></motion.div>
@@ -75,10 +75,10 @@ const RenderLayers = () => {
       <motion.div
         animate={{ x: [-30, 0], y: [20, 0] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 8,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer6 absolute bottom-[650px] left-[120px] h-40 w-72 opacity-50"
       ></motion.div>
@@ -86,10 +86,10 @@ const RenderLayers = () => {
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 4,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer7 absolute bottom-[400px] left-[1220px] h-40 w-72 opacity-80"
       ></motion.div>
@@ -97,10 +97,10 @@ const RenderLayers = () => {
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 4,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer8 absolute bottom-[400px] left-[700px] h-40 w-72 opacity-100"
       ></motion.div>
@@ -114,11 +114,11 @@ const RenderLayers = () => {
           opacity: [0.8, 1],
         }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 5,
           delay: 0,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer9 absolute bottom-[600px] left-[100px] h-40 w-72 sm:left-[1000px]"
       ></motion.div>
@@ -126,10 +126,10 @@ const RenderLayers = () => {
       <motion.div
         animate={{ x: [-20, 0], y: [20, 0] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 4,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         }}
         className="bg-layer10 absolute bottom-[500px] left-[1400px] h-40 w-72 opacity-40"
       ></motion.div>
@@ -137,36 +137,36 @@ const RenderLayers = () => {
       <motion.div
         animate={{ x: [-20, 10], y: [10, 0], opacity: [0.6, 0.7] }}
         transition={{
-          ease: 'easeInOut',
+          ease: "easeInOut",
           duration: 4,
           repeat: Infinity,
-          repeatType: 'reverse',
+          repeatType: "reverse",
           delay: 2,
         }}
         className="bg-layer11 absolute bottom-[400px] left-[1490px] h-40 w-72 opacity-40"
       ></motion.div>
     </>
-  )
-}
+  );
+};
 
 export default function JoinUs() {
   const profiles = [
-    { imgSrc: '/image1.jpg', alt: 'Profile 1' },
-    { imgSrc: '/image2.jpg', alt: 'Profile 2' },
-    { imgSrc: '/image3.jpg', alt: 'Profile 3' },
-    { imgSrc: '/image4.jpg', alt: 'Profile 4' },
-  ]
+    { imgSrc: "/image1.jpg", alt: "Profile 1" },
+    { imgSrc: "/image2.jpg", alt: "Profile 2" },
+    { imgSrc: "/image3.jpg", alt: "Profile 3" },
+    { imgSrc: "/image4.jpg", alt: "Profile 4" },
+  ];
 
   return (
     <section className="flex h-screen flex-col">
       <div className="flex-shrink-0">
         <Datas />
       </div>
-      <div className="overflow-hidden flex-grow bg-[#2C3680] p-4 sm:p-0 relative ">
+      <div className="relative flex-grow overflow-hidden bg-[#2C3680] p-4 sm:p-0">
         <RenderLayers />
-        <div className="absolute flex-center p-4 inset-0 gap-32">
+        <div className="flex-center absolute inset-0 gap-32 p-4">
           <motion.div
-            className="hidden lg:block "
+            className="hidden lg:block"
             initial={{ x: -300, opacity: 0, scale: 0.9 }}
             whileInView={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
@@ -179,10 +179,10 @@ export default function JoinUs() {
             whileInView={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
             exit={{ x: 300, opacity: 0 }}
-            className="text-white space-y-10"
+            className="space-y-10 text-white"
           >
-            <div className="max-w-[500px] ">
-              <h1 className="text-[56px] leading-tight font-bold ">
+            <div className="max-w-[500px]">
+              <h1 className="text-[56px] font-bold leading-tight">
                 Junte-se a nossa comunidade
               </h1>
               <p className="font-light">
@@ -218,5 +218,5 @@ export default function JoinUs() {
         </div>
       </div>
     </section>
-  )
+  );
 }

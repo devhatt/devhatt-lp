@@ -1,18 +1,18 @@
-import Facebook from '@/components/petdex/Footer/assets/Facebook'
-import Instagram from './assets/Instragram'
-import LogoPetdex from './assets/LogoPetdex'
-import Twitter from './assets/Twitter'
-import Link from 'next/link'
+import Facebook from "@/components/petdex/Footer/assets/Facebook";
+import Instagram from "./assets/Instragram";
+import LogoPetdex from "./assets/LogoPetdex";
+import Twitter from "./assets/Twitter";
+import Link from "next/link";
 
 const links = [
-  { href: '/', label: 'Home', icon: <Facebook /> },
-  { href: '/', label: 'Petdex', icon: <Instagram /> },
-  { href: '/', label: 'Contato', icon: <Twitter /> },
-]
+  { href: "/", label: "Home", icon: <Facebook /> },
+  { href: "/", label: "Petdex", icon: <Instagram /> },
+  { href: "/", label: "Contato", icon: <Twitter /> },
+];
 export default function Footer() {
   return (
-    <footer className="bg-petdex-darkBlueSecondary flex w-full items-center justify-center">
-      <div className="text-petdex-primayWhite w-full">
+    <footer className="flex w-full items-center justify-center bg-petdex-darkBlueSecondary">
+      <div className="w-full text-petdex-primayWhite">
         <div className="grid grid-flow-row items-center justify-center gap-y-8 py-8 lg:grid-flow-col lg:gap-x-52">
           <div className="min-w-50 flex justify-center lg:col-start-2">
             <LogoPetdex />
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-petdex-primayWhite mx-auto border-t-[1px] lg:max-w-[70rem]"></div>
+        <div className="mx-auto border-t-[1px] border-petdex-primayWhite lg:max-w-[70rem]"></div>
 
         <div className="flex w-full items-center justify-center py-6">
           <span className="text-lg font-light text-[#E0E0E0]">
@@ -46,5 +46,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

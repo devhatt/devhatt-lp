@@ -9,7 +9,7 @@ function Ellipse() {
     >
       <circle cx="-30.5" cy="-12" r="117.5" fill="#F8F9FF" />
     </svg>
-  )
+  );
 }
 
-export default Ellipse
+export default Ellipse;

@@ -12,5 +12,5 @@ export default function InputIcon() {
         fill="white"
       />
     </svg>
-  )
+  );
 }

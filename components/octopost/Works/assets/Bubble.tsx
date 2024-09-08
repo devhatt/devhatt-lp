@@ -679,7 +679,7 @@ function Bubble() {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }
 
-export default Bubble
+export default Bubble;

@@ -1,5 +1,5 @@
 "use client";
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 import { CloudIcon } from "./assets/CloudIcon";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useRef } from "react";

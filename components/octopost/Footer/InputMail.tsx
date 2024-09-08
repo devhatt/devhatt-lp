@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import InputIcon from "./assets/InputIcon";
 
-type Props = {};
-
-export default function InputMail({}: Props) {
+export default function InputMail() {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -12,7 +10,7 @@ export default function InputMail({}: Props) {
   };
 
   return (
-    <div className="flex items-center over">
+    <div className="over flex items-center">
       <motion.div
         className="flex"
         initial={{ width: "250px", opacity: 1 }}
@@ -24,7 +22,7 @@ export default function InputMail({}: Props) {
         style={{ overflow: "hidden" }}
       >
         <motion.input
-          className="p-2 outline-cyan-800/30 bg-cyan-900/20 text-white outline mr-[3px] h-[46px]"
+          className="mr-[3px] h-[46px] bg-cyan-900/20 p-2 text-white outline outline-cyan-800/30"
           type="text"
           placeholder="Entre com seu email"
           style={{ width: "100%" }}
@@ -38,7 +36,7 @@ export default function InputMail({}: Props) {
           opacity: 1,
         }}
         transition={{ duration: 1.5, ease: "easeInOut" }}
-        className="flex items-center justify-center w-[62px] h-[46px]"
+        className="flex h-[46px] w-[62px] items-center justify-center"
         onClick={handleClick}
       >
         <motion.div
@@ -65,7 +63,7 @@ export default function InputMail({}: Props) {
         >
           <InputIcon />
           <div
-            className={`h-2 ${isClicked ? "opacity-100" : "opacity-0"} transition duration-1000 absolute top-[14px] left-[24px] text-[0.4rem] font-light w-2 rounded-full bg-red-500 flex-center`}
+            className={`h-2 ${isClicked ? "opacity-100" : "opacity-0"} flex-center absolute left-[24px] top-[14px] w-2 rounded-full bg-red-500 text-[0.4rem] font-light transition duration-1000`}
           >
             1
           </div>

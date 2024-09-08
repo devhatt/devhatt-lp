@@ -277,5 +277,5 @@ export default function FaqLogo() {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }

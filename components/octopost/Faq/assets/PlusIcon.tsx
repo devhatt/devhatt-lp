@@ -13,5 +13,5 @@ export default function MinusIcon() {
         fill="#1D1E25"
       />
     </svg>
-  )
+  );
 }

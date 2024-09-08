@@ -8,7 +8,7 @@ import InputMail from "./InputMail";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row lg:flex-row justify-evenly items-center bg-[#221440] text-octopost-primaryWhite h-[428px] w-full">
+    <footer className="flex h-[428px] w-full flex-col items-center justify-evenly bg-[#221440] text-octopost-primaryWhite md:flex-row lg:flex-row">
       <motion.div
         initial={{ y: 300, opacity: 0, scale: 0.9 }}
         whileInView={{ y: 0, opacity: 1, scale: 1 }}
@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="mix-blend-luminosity">
           <Logo />
         </div>
-        <div className="font-bold leading-10 space-x-4 text-center  max-w-[250px]">
+        <div className="max-w-[250px] space-x-4 text-center font-bold leading-10">
           <Link href="/"> About Us</Link>
           <Link href="/">Team</Link>
           <Link href="/">Careers</Link>
@@ -33,7 +33,7 @@ export default function Footer() {
         whileInView={{ y: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 0.4 }}
         exit={{ y: 300, opacity: 0 }}
-        className="space-y-4 max-w-[300px]"
+        className="max-w-[300px] space-y-4"
       >
         <div className="space-y-4">
           <h1 className="font-bold">Newsletter</h1>
@@ -62,5 +62,5 @@ export default function Footer() {
         </div>
       </motion.div>
     </footer>
-  )
+  );
 }

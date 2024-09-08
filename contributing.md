@@ -5,6 +5,7 @@ Estamos entusiasmados com sua contribuição para nossos projetos de landing pag
 ## Como Contribuir
 
 1. **Clone o Repositório:**
+
    - Primeiro, faça um fork deste repositório para sua conta do GitHub.
    - Em seguida, clone o repositório para sua máquina local:
      ```bash
@@ -16,16 +17,19 @@ Estamos entusiasmados com sua contribuição para nossos projetos de landing pag
      ```
 
 2. **Escolha uma Tarefa ou Sugira uma Nova:**
+
    - Verifique as [issues](https://github.com/devhatt/devhatt-lp/issues) e os [projetos](https://github.com/devhatt/devhatt-lp/projects) para encontrar uma tarefa em que gostaria de trabalhar.
    - Se tiver uma ideia nova, sinta-se à vontade para abrir uma nova issue.
 
 3. **Crie um Branch para sua Tarefa:**
+
    - Crie um branch com um nome descritivo:
      ```bash
      git checkout -b minha-tarefa
      ```
 
 4. **Faça Suas Alterações:**
+
    - Faça as alterações necessárias no código e adicione os arquivos modificados ao stage:
      ```bash
      git add .
@@ -36,6 +40,7 @@ Estamos entusiasmados com sua contribuição para nossos projetos de landing pag
      ```
 
 5. **Envie o Branch para o Repositório Fork:**
+
    - Envie suas alterações para seu repositório fork no GitHub:
      ```bash
      git push origin minha-tarefa
