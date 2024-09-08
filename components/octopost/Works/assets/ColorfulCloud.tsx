@@ -98,7 +98,7 @@ function ColorfulCloud() {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }
 
-export default ColorfulCloud
+export default ColorfulCloud;

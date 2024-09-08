@@ -28,7 +28,7 @@ function ColorfulEllipse() {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }
 
-export default ColorfulEllipse
+export default ColorfulEllipse;

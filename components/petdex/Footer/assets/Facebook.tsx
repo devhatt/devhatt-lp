@@ -1,4 +1,4 @@
-import { SVGProps } from 'react'
+import { SVGProps } from "react";
 
 export default function Facebook(props: SVGProps<SVGSVGElement>) {
   return (
@@ -15,5 +15,5 @@ export default function Facebook(props: SVGProps<SVGSVGElement>) {
         fill="white"
       />
     </svg>
-  )
+  );
 }

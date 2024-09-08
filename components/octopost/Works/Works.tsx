@@ -1,25 +1,26 @@
-'use client'
+"use client";
 
-import { useRef, useState } from 'react'
-import Bubble from './assets/Bubble'
-import VectorLeft from './assets/VectorLeft'
-import VectorRight from './assets/VectorRight'
-import Card from './Card'
+import { useRef, useState } from "react";
+import Bubble from "./assets/Bubble";
+import VectorLeft from "./assets/VectorLeft";
+import VectorRight from "./assets/VectorRight";
+import Card from "./Card";
+import { motion } from "framer-motion";
 
-import { CARDS } from './utils/Cards'
+import { CARDS } from "./utils/Cards";
 
 function Works() {
-  const [activeSlide, setActiveSlide] = useState<number>(0)
-  const scrollContainerRef = useRef<HTMLUListElement>(null)
+  const [activeSlide, setActiveSlide] = useState<number>(0);
+  const scrollContainerRef = useRef<HTMLUListElement>(null);
 
   const handleScrollEvent = (): void => {
     if (scrollContainerRef.current) {
-      const scrollLeft = scrollContainerRef.current.scrollLeft
-      const width = scrollContainerRef.current.clientWidth
-      const newActiveSlide = Math.round(scrollLeft / width)
-      setActiveSlide(newActiveSlide)
+      const scrollLeft = scrollContainerRef.current.scrollLeft;
+      const width = scrollContainerRef.current.clientWidth;
+      const newActiveSlide = Math.round(scrollLeft / width);
+      setActiveSlide(newActiveSlide);
     }
-  }
+  };
 
   return (
     <section className="relative mb-60 flex h-screen items-center overflow-hidden bg-octopost-primaryWhite">
@@ -58,7 +59,7 @@ function Works() {
         {Array.from({ length: CARDS.length }).map((_, index) => (
           <div
             key={index}
-            className={`h-3 w-3 rounded-full border-[1px] transition-all duration-500 ${index === activeSlide ? 'border-octopost-primaryViolet bg-octopost-primaryViolet' : 'border-[#A1A1A1]'}`}
+            className={`h-3 w-3 rounded-full border-[1px] transition-all duration-500 ${index === activeSlide ? "border-octopost-primaryViolet bg-octopost-primaryViolet" : "border-[#A1A1A1]"}`}
           ></div>
         ))}
       </div>
@@ -72,20 +73,58 @@ function Works() {
         <VectorLeft />
       </div>
 
-      <div className="absolute bottom-[8%] left-[10%] mobile:-left-20 mobile:bottom-1 mobile:opacity-40 desktop:animate-pulse">
-        <Bubble />
-      </div>
-      <div className="absolute left-[24.3%] top-[30.2%] rotate-90 scale-[.71] mobile:left-72 mobile:top-52 mobile:opacity-40 desktop:animate-pulse">
-        <Bubble />
-      </div>
-      <div className="absolute right-[15%] top-[25%] scale-75 mobile:-left-36 mobile:top-28 mobile:opacity-40 desktop:animate-pulse">
-        <Bubble />
-      </div>
-      <div className="absolute bottom-[5%] right-[12%] -rotate-90 scale-[1.31] mobile:-bottom-32 mobile:left-96 mobile:opacity-40 desktop:animate-pulse">
-        <Bubble />
-      </div>
+      {[
+        {
+          className:
+            "absolute left-[10%] bottom-[8%] mobile:-left-20 mobile:bottom-1 desktop:animate-pulse mobile:opacity-40",
+          delay: 0,
+        },
+        {
+          className:
+            "absolute left-[24.3%] top-[30.2%] scale-[.71] rotate-90 mobile:left-72 mobile:top-52 desktop:animate-pulse mobile:opacity-40",
+          delay: 1,
+        },
+        {
+          className:
+            "absolute right-[15%] top-[25%] scale-75 mobile:-left-36 mobile:top-28 desktop:animate-pulse mobile:opacity-40",
+          delay: 2,
+        },
+        {
+          className:
+            "absolute right-[12%] bottom-[5%] scale-[1.31] -rotate-90 mobile:left-96 mobile:-bottom-32 desktop:animate-pulse mobile:opacity-40",
+          delay: 3,
+        },
+      ].map(({ className, delay }, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, scale: 0.1 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: [0, -3, 0],
+            rotate: [0, 2, 0],
+          }}
+          transition={{
+            duration: 3,
+            delay: delay * 1,
+            y: {
+              repeat: Infinity,
+              duration: 3,
+              ease: "easeInOut",
+            },
+            rotate: {
+              repeat: Infinity,
+              duration: 3,
+              ease: "easeInOut",
+            },
+          }}
+          className={className}
+        >
+          <Bubble />
+        </motion.div>
+      ))}
     </section>
-  )
+  );
 }
 
-export default Works
+export default Works;

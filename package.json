@@ -19,6 +19,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.19",
     "gsap": "^3.12.5",
+    "lucide-react": "^0.437.0",
     "next": "14.2.4",
     "popcorn": "^0.0.3",
     "react": "^18.3.1",

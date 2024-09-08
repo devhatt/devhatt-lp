@@ -1,55 +1,55 @@
-'use client'
-import { cn } from '@/lib/utils'
-import { AnimatePresence, motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
-import { useInterval } from 'usehooks-ts'
-import MinusIcon from './assets/MinusIcon'
-import PlusIcon from './assets/PlusIcon'
+"use client";
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { useInterval } from "usehooks-ts";
+import MinusIcon from "./assets/MinusIcon";
+import PlusIcon from "./assets/PlusIcon";
 
 const Accordion = () => {
-  const [progress, setProgress] = useState(0)
-  const [activeQuestion, setActiveQuestion] = useState<number | null>(null)
-  const [accordionOpenId, setAccordionOpenId] = useState(1)
+  const [progress, setProgress] = useState(0);
+  const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
+  const [accordionOpenId, setAccordionOpenId] = useState(1);
 
   useInterval(() => {
     setProgress((prevProgress) => {
-      let newProgress = prevProgress + 0.3
+      let newProgress = prevProgress + 0.3;
       if (newProgress >= 100) {
-        setAccordionOpenId(accordionOpenId < 4 ? accordionOpenId + 1 : 1)
-        newProgress = 0
+        setAccordionOpenId(accordionOpenId < 4 ? accordionOpenId + 1 : 1);
+        newProgress = 0;
       }
-      return newProgress
-    })
-  }, 10)
+      return newProgress;
+    });
+  }, 10);
 
   useEffect(() => {
-    setActiveQuestion(accordionOpenId)
-  }, [accordionOpenId])
+    setActiveQuestion(accordionOpenId);
+  }, [accordionOpenId]);
 
   const questions = [
     {
       id: 1,
       question:
-        'What is your name? ajdxwaiudxhawuixhdauwixhduaiwhdxuiawhdxuiaw',
-      answer: 'shreyas',
+        "What is your name? ajdxwaiudxhawuixhdauwixhduaiwhdxuiawhdxuiaw",
+      answer: "shreyas",
     },
     {
       id: 2,
-      question: 'What is your age?',
-      answer: '22',
+      question: "What is your age?",
+      answer: "22",
     },
     {
       id: 3,
-      question: 'What is your hobby?',
-      answer: 'coding',
+      question: "What is your hobby?",
+      answer: "coding",
     },
     {
       id: 4,
-      question: 'What is your fav color?udhauwdhawuhduawhuahdauwhdawuhd',
+      question: "What is your fav color?udhauwdhawuhduawhuahdauwhdawuhd",
       answer:
-        'blackawuhduwahduawhzduawhdzuhawudhwaudxhawudxhwaudxhwaudhxawudhxxawudhwauhdxxauwh',
+        "blackawuhduwahduawhzduawhdzuhawudhwaudxhawudxhwaudxhwaudhxawudhxxawudhwauhdxxauwh",
     },
-  ]
+  ];
   return (
     <>
       <div className="flex-center">
@@ -69,8 +69,8 @@ const Accordion = () => {
               >
                 <div className="flex w-full justify-between font-bold text-black/70">
                   <motion.div
-                    className={cn('truncate', {
-                      'text-octopost-primaryViolet':
+                    className={cn("truncate", {
+                      "text-octopost-primaryViolet":
                         activeQuestion === question.id,
                     })}
                     initial={{ opacity: 0.5, scale: 0.95 }}
@@ -100,12 +100,12 @@ const Accordion = () => {
                     }}
                     animate={{
                       opacity: 1,
-                      height: 'auto',
+                      height: "auto",
                     }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="ml-4 mt-2 max-w-[280px] text-gray-600 sm:max-w-[530px]"
+                    className="ml-4 mt-2 max-w-[280px] flex-wrap overflow-hidden text-wrap text-gray-600 sm:max-w-[530px]"
                   >
-                    <p className="text-sm text-violet-950/50">
+                    <p className="whitespace-normal break-words text-sm text-violet-950/50">
                       {question.answer}
                     </p>
                     <div className="h-[2px] w-full bg-gray-100 transition-all">
@@ -122,6 +122,6 @@ const Accordion = () => {
         </div>
       </div>
     </>
-  )
-}
-export default Accordion
+  );
+};
+export default Accordion;

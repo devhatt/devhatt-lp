@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function InputIconWhats({ size }: { size: number }) {
   return (
@@ -25,7 +25,7 @@ function InputIconWhats({ size }: { size: number }) {
         ></path>
       </g>
     </svg>
-  )
+  );
 }
 
-export default InputIconWhats
+export default InputIconWhats;

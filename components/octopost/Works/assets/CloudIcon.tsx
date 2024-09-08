@@ -66,7 +66,7 @@ function CloudIcon() {
         stroke-linejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export default CloudIcon
+export default CloudIcon;

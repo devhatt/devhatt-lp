@@ -1,5 +1,5 @@
-import React from 'react'
-import Wavify from 'react-wavify'
+import React from "react";
+import Wavify from "react-wavify";
 
 const Waves = () => {
   return (
@@ -27,7 +27,7 @@ const Waves = () => {
         className="absolute bottom-0 w-full"
       />
     </div>
-  )
-}
+  );
+};
 
-export default Waves
+export default Waves;

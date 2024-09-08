@@ -1,4 +1,4 @@
-import { SVGProps } from 'react'
+import { SVGProps } from "react";
 
 export default function LogoPetdex(props: SVGProps<SVGSVGElement>) {
   return (
@@ -54,5 +54,5 @@ export default function LogoPetdex(props: SVGProps<SVGSVGElement>) {
         </g>
       </g>
     </svg>
-  )
+  );
 }

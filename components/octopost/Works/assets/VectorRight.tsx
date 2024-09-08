@@ -25,7 +25,7 @@ function VectorRight() {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }
 
-export default VectorRight
+export default VectorRight;

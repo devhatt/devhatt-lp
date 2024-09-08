@@ -1,4 +1,4 @@
-import { SVGProps } from 'react'
+import { SVGProps } from "react";
 
 export default function Instagram(props: SVGProps<SVGSVGElement>) {
   return (
@@ -24,5 +24,5 @@ export default function Instagram(props: SVGProps<SVGSVGElement>) {
       />
       <circle cx="17.8358" cy="5.08737" r="0.732875" fill="white" />
     </svg>
-  )
+  );
 }

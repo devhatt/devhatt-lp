@@ -1978,5 +1978,5 @@ export default function StickerLogo1() {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }

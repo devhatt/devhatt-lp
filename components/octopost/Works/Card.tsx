@@ -1,19 +1,19 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import React, { useState } from 'react'
-import ColorfulEllipse from './assets/ ColorfulEllipse'
-import CloudIcon from './assets/CloudIcon'
-import Ellipse from './assets/Ellipse'
-import ColorfulCloud from './assets/ColorfulCloud'
+import { motion } from "framer-motion";
+import React, { useState } from "react";
+import ColorfulEllipse from "./assets/ ColorfulEllipse";
+import CloudIcon from "./assets/CloudIcon";
+import Ellipse from "./assets/Ellipse";
+import ColorfulCloud from "./assets/ColorfulCloud";
 
 type CardProps = {
-  title: string
-  text: string
-}
+  title: string;
+  text: string;
+};
 
 function Card({ title, text }: CardProps) {
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.div
@@ -65,8 +65,8 @@ function Card({ title, text }: CardProps) {
       <motion.div
         initial={{ width: 0 }}
         animate={{
-          width: isHovered ? '108px' : '0px',
-          height: isHovered ? '8px' : '0px',
+          width: isHovered ? "108px" : "0px",
+          height: isHovered ? "8px" : "0px",
         }}
         transition={{
           width: { duration: 0.5 },
@@ -75,7 +75,7 @@ function Card({ title, text }: CardProps) {
         className="absolute bottom-0 left-1/2 z-40 h-2 -translate-x-1/2 transform rounded-full bg-gradient-purplebar"
       ></motion.div>
     </motion.div>
-  )
+  );
 }
 
-export default Card
+export default Card;

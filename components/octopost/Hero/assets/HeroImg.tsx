@@ -1,9 +1,15 @@
-function HeroImg() {
+interface HeroImgProps {
+  isMobile: boolean;
+}
+
+function HeroImg({ isMobile }: HeroImgProps) {
+  const width = isMobile ? "480" : "840";
+  const height = isMobile ? "400" : "540";
   return (
     <svg
-      width="840"
-      height="540"
-      viewBox="0 0 956 657"
+      width={width}
+      height={height}
+      viewBox="100 0 900 657"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -33838,7 +33844,7 @@ function HeroImg() {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }
 
-export default HeroImg
+export default HeroImg;

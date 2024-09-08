@@ -27,7 +27,7 @@ function VectorLeft() {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }
 
-export default VectorLeft
+export default VectorLeft;
