@@ -1,5 +1,7 @@
 "use client";
 
+import { AboutLogoIconsBg, AboutLogoIconsBg1 } from "./assets/AboutLogoIconsBg";
+
 import { motion } from "framer-motion";
 import AboutLogo from "./assets/AboutLogo";
 import {
@@ -10,11 +12,13 @@ import {
   AboutIcons5,
 } from "./assets/AboutLogoIcons";
 import CloudIcon from "./assets/CloudIcon";
+import CloudIcon2 from "./assets/CloudIcon2";
 
 export default function About() {
   return (
     <section className="md:flex-center lg:flex-center flex overflow-x-hidden bg-white lg:mx-40">
       <div className="lg:flex-center">
+
         <motion.div
           initial={{ x: -300, opacity: 0, scale: 0.9 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
@@ -23,20 +27,60 @@ export default function About() {
           className="relative hidden lg:flex"
         >
           <AboutLogo />
-          <div className="absolute left-14 top-36">
-            <AboutIcons1 />
+          <div className="absolute left-28 top-48 hover:scale-105 transition-transform duration-300 group">
+            <div className="relative">
+              <AboutLogoIconsBg />
+              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
+                boxShadow: '0 0 0 10px rgba(160, 118, 249, 0.2)',
+              }}></div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+              <AboutIcons1 />
+            </div>
           </div>
-          <div className="absolute left-20 top-[278px]">
-            <AboutIcons2 />
+          <div className="absolute left-32 top-[331px] hover:scale-105 transition-transform duration-300 group">
+            <div className="relative">
+              <AboutLogoIconsBg />
+              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
+                boxShadow: '0 0 0 10px rgba(160, 118, 249, 0.2)',
+              }}></div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+              <AboutIcons2 />
+            </div>
           </div>
-          <div className="absolute bottom-7 left-48">
-            <AboutIcons3 />
+          <div className="absolute bottom-20 left-60 hover:scale-105 transition-transform duration-300 group">
+            <div className="relative">
+              <AboutLogoIconsBg />
+              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
+                boxShadow: '0 0 0 10px rgba(160, 118, 249, 0.2)',
+              }}></div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+              <AboutIcons3 />
+            </div>
           </div>
-          <div className="absolute bottom-10 right-[164px]">
-            <AboutIcons4 />
+          <div className="absolute bottom-20 right-[210px] hover:scale-105 transition-transform duration-300 group">
+            <div className="relative">
+              <AboutLogoIconsBg />
+              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
+                boxShadow: '0 0 0 10px rgba(160, 118, 249, 0.2)',
+              }}></div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+              <AboutIcons4 />
+            </div>
           </div>
-          <div className="absolute right-8 top-56">
-            <AboutIcons5 />
+          <div className="absolute right-28 bottom-44 hover:scale-105 transition-transform duration-300 group">
+            <div className="relative">
+              <AboutLogoIconsBg1 />
+              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
+                boxShadow: '0 0 0 40px rgba(247, 40, 142, 0.1), 0 0 0 28px rgba(247, 40, 142, 0.1)',
+              }}></div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+              <AboutIcons5 />
+            </div>
           </div>
         </motion.div>
       </div>
@@ -58,25 +102,45 @@ export default function About() {
             desenvolver um módulo pra usar essa nova rede social no app!
           </p>
           <div className="max-w-1/3 flex-center flex flex-wrap-reverse gap-8 overflow-x-hidden lg:flex-row lg:flex-nowrap">
-            <div className="">
-              <CloudIcon />
+            <div>
+              <div className="relative group">
+                <div className="transition-opacity duration-300  hover:opacity-0">
+                  <CloudIcon />
+                </div>
+                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <CloudIcon2 />
+                </div>
+              </div>
               <p className="primary-text-gradient text-center">
-                Free and Open <br />
-                Source
+                Grátis e Código <br />
+                Aberto
               </p>
             </div>
-            <div className="hover:bg-white">
-              <CloudIcon />
+            <div>
+              <div className="relative group">
+                <div className="transition-opacity duration-300 hover:opacity-0">
+                  <CloudIcon />
+                </div>
+                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <CloudIcon2 />
+                </div>
+              </div>
               <p className="primary-text-gradient text-center">
-                Free and Open <br />
-                Source
+                Modular e <br />
+                Extensível
               </p>
             </div>
-            <div className="">
-              <CloudIcon />
+            <div>
+              <div className="relative group">
+                <div className="transition-opacity duration-300 hover:opacity-0">
+                  <CloudIcon />
+                </div>
+                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <CloudIcon2 />
+                </div>
+              </div>
               <p className="primary-text-gradient text-center">
-                Free and Open <br />
-                Source
+                Multiplataforma
               </p>
             </div>
           </div>
