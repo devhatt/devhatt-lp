@@ -18,7 +18,6 @@ export default function About() {
   return (
     <section className="md:flex-center lg:flex-center flex overflow-x-hidden bg-white lg:mx-40">
       <div className="lg:flex-center">
-
         <motion.div
           initial={{ x: -300, opacity: 0, scale: 0.9 }}
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
@@ -27,58 +26,74 @@ export default function About() {
           className="relative hidden lg:flex"
         >
           <AboutLogo />
-          <div className="absolute left-28 top-48 hover:scale-105 transition-transform duration-300 group">
+          <div className="group absolute left-28 top-48 transition-transform duration-300 hover:scale-105">
             <div className="relative">
               <AboutLogoIconsBg />
-              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
-                boxShadow: '0 0 0 10px rgba(160, 118, 249, 0.2)',
-              }}></div>
+              <div
+                className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                style={{
+                  boxShadow: "0 0 0 10px rgba(160, 118, 249, 0.2)",
+                }}
+              ></div>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+            <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 hover:scale-95">
               <AboutIcons1 />
             </div>
           </div>
-          <div className="absolute left-32 top-[331px] hover:scale-105 transition-transform duration-300 group">
+          <div className="group absolute left-32 top-[331px] transition-transform duration-300 hover:scale-105">
             <div className="relative">
               <AboutLogoIconsBg />
-              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
-                boxShadow: '0 0 0 10px rgba(160, 118, 249, 0.2)',
-              }}></div>
+              <div
+                className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                style={{
+                  boxShadow: "0 0 0 10px rgba(160, 118, 249, 0.2)",
+                }}
+              ></div>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+            <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 hover:scale-95">
               <AboutIcons2 />
             </div>
           </div>
-          <div className="absolute bottom-20 left-60 hover:scale-105 transition-transform duration-300 group">
+          <div className="group absolute bottom-20 left-60 transition-transform duration-300 hover:scale-105">
             <div className="relative">
               <AboutLogoIconsBg />
-              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
-                boxShadow: '0 0 0 10px rgba(160, 118, 249, 0.2)',
-              }}></div>
+              <div
+                className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                style={{
+                  boxShadow: "0 0 0 10px rgba(160, 118, 249, 0.2)",
+                }}
+              ></div>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+            <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 hover:scale-95">
               <AboutIcons3 />
             </div>
           </div>
-          <div className="absolute bottom-20 right-[210px] hover:scale-105 transition-transform duration-300 group">
+          <div className="group absolute bottom-20 right-[210px] transition-transform duration-300 hover:scale-105">
             <div className="relative">
               <AboutLogoIconsBg />
-              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
-                boxShadow: '0 0 0 10px rgba(160, 118, 249, 0.2)',
-              }}></div>
+              <div
+                className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                style={{
+                  boxShadow: "0 0 0 10px rgba(160, 118, 249, 0.2)",
+                }}
+              ></div>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+            <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 hover:scale-95">
               <AboutIcons4 />
             </div>
           </div>
-          <div className="absolute right-28 bottom-44 hover:scale-105 transition-transform duration-300 group">
+          <div className="group absolute bottom-44 right-28 transition-transform duration-300 hover:scale-105">
             <div className="relative">
               <AboutLogoIconsBg1 />
-              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
-                boxShadow: '0 0 0 40px rgba(247, 40, 142, 0.1), 0 0 0 28px rgba(247, 40, 142, 0.1)',
-              }}></div>
+              <div
+                className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                style={{
+                  boxShadow:
+                    "0 0 0 40px rgba(247, 40, 142, 0.1), 0 0 0 28px rgba(247, 40, 142, 0.1)",
+                }}
+              ></div>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center hover:scale-95 transition-transform duration-300">
+            <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 hover:scale-95">
               <AboutIcons5 />
             </div>
           </div>
@@ -103,8 +118,8 @@ export default function About() {
           </p>
           <div className="max-w-1/3 flex-center flex flex-wrap-reverse gap-8 overflow-x-hidden lg:flex-row lg:flex-nowrap">
             <div>
-              <div className="relative group">
-                <div className="transition-opacity duration-300  hover:opacity-0">
+              <div className="group relative">
+                <div className="transition-opacity duration-300 hover:opacity-0">
                   <CloudIcon />
                 </div>
                 <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -117,7 +132,7 @@ export default function About() {
               </p>
             </div>
             <div>
-              <div className="relative group">
+              <div className="group relative">
                 <div className="transition-opacity duration-300 hover:opacity-0">
                   <CloudIcon />
                 </div>
@@ -131,7 +146,7 @@ export default function About() {
               </p>
             </div>
             <div>
-              <div className="relative group">
+              <div className="group relative">
                 <div className="transition-opacity duration-300 hover:opacity-0">
                   <CloudIcon />
                 </div>
