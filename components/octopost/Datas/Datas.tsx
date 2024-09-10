@@ -63,7 +63,7 @@ export default function Datas() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: index * 0.4 }}
             key={index}
-            className={`relative z-10 ml-0 flex w-full flex-row gap-5 lg:max-w-[340px] lg:flex-row lg:gap-5 ${index % 2 === 0 ? "ml-56 mt-32 w-full" : ""}`}
+            className={`relative z-10 flex w-full flex-row gap-5 lg:max-w-[340px] lg:flex-row lg:gap-5 ${index % 2 === 0 ? "mt-32" : "mt-0"}`}
           >
             <div className="group">
               <div className="flex-center size-24 rounded-md bg-white/30 transition-all group-hover:scale-x-[-1]">

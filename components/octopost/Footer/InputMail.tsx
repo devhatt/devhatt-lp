@@ -7,6 +7,10 @@ export default function InputMail() {
 
   const handleClick = () => {
     setIsClicked(true);
+
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 5000);
   };
 
   return (
@@ -43,10 +47,10 @@ export default function InputMail() {
           className="relative"
           initial={{ x: 0, y: 0, rotate: 0, scale: 1.5 }}
           animate={{
-            x: isClicked ? 700 : 0,
-            y: isClicked ? -700 : 0,
+            x: isClicked ? 800 : 0,
+            y: isClicked ? -800 : 0,
             scale: isClicked ? 1.8 : 1.5,
-            rotate: isClicked ? [0, -15, 15, -10, 10, 0] : 0, // Tremor antes de voar
+            rotate: isClicked ? [0, -15, 15, -10, 10, 0] : 0,
           }}
           transition={{
             duration: 1,

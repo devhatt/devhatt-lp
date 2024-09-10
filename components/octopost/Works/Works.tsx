@@ -98,12 +98,13 @@ function Works() {
         <motion.div
           key={index}
           initial={{ opacity: 0, scale: 0.1 }}
-          animate={{
+          whileInView={{
             opacity: 1,
             scale: 1,
             y: [0, -3, 0],
             rotate: [0, 2, 0],
           }}
+          viewport={{ once: true }} // A animação ocorrerá uma vez quando o elemento entrar na tela
           transition={{
             duration: 3,
             delay: delay * 1,
